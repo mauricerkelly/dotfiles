@@ -1,0 +1,1 @@
+alias genctags='/Applications/BBEdit.app/Contents/Helpers/ctags --excmd=number --tag-relative=no --fields=+a+m+n+S -f tags -R "$PWD"'

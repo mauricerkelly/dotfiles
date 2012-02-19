@@ -1,0 +1,7 @@
+alias reload='. ~/.bashrc'
+alias g='grep'
+alias grep='grep --color'
+
+alias sdr='screen -d -R'
+alias sdrd='sdr dev'
+alias sdrr='sdr radius'

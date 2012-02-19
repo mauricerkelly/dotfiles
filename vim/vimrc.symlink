@@ -1,0 +1,16 @@
+set autoindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set backspace=start
+set ruler
+set showcmd
+set textwidth=120
+set wrapmargin=2
+set cinoptions=:0,p0,t0
+set cinwords=if,else,while,do,for,switch,case
+set formatoptions=tcqr
+set cindent
+set incsearch
+set hlsearch
+set nobackup

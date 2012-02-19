@@ -1,0 +1,7 @@
+#escape ^Zz
+#defescape Bb
+caption always "%w"
+#hardstatus alwayslastline "This is a test..."
+bind f eval "caption splitonly" #"hardstatus ignore"
+bind F eval "caption always"    #"hardstatus alwayslastline"
+defscrollback 5000
