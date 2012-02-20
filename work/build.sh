@@ -1,11 +1,9 @@
 # Check for WORKSPACE_HEAD and BUILD_HEAD - if they are not set, then we don't want to set anything
 if [ -z $WORKSPACE_HEAD ]; then
-    echo "No workspace head defined"
     return 0
 fi
 
 if [ -z $BUILD_HEAD ]; then
-    echo "No build head defined"
     return 0
 fi
 
