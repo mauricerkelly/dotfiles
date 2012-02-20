@@ -8,15 +8,13 @@ if [ -e $DOTFILES/bash/functions ]; then
     done
 fi
 
+# use .localrc for machine specific configuration
+if [ -f $HOME/.localrc ]; then
+  . $HOME/.localrc
+fi
+
 # source every .sh file in this rep
 for config_file in `ls $DOTFILES/*/*.sh`; do source $config_file; done
-
-# use .privaterc for SUPER SECRET CRAP that you don't
-# want in your public, versioned repo.
-if [[ -a ~/.privaterc ]]
-then
-  source ~/.privaterc
-fi
 
 # load every completion after autocomplete loads
 for config_file in `ls $DOTFILES/*/completions`; do source $config_file; done
