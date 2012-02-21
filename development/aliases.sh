@@ -1,3 +1,4 @@
+alias gdbp='gdb --pid'
 
 alias ma='make all'
 alias mc='make clean'
