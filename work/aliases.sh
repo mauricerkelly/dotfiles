@@ -1,4 +1,4 @@
-alias cds='cd $SRC_HEAD; echo "Current codeline is $CODELINE"'
+alias cds='cd $SRC_HEAD'
 alias cddb='if [ $DERBASE ]; then cd $DERBASE; else echo "No DERBASE defined"; fi'
 alias lsdb='ls -l $DERBASE'
 alias rmdb='rm -rf $DERBASE/*'
@@ -10,6 +10,7 @@ alias cdws='cd /nfs-bfs/workspace/mkelly'
 alias sr='pwd; su - root -c "bash --rcfile /users/mkelly/.bash_root"'
 alias tcslog='tail -f /opt/opwv/oam/2.0/tomcat/logs/catalina.out'
 alias tmeplog='tail -f /var/opt/opwv/logs/MepApp.log'
+alias tscalog='tail -f /var/opt/opwv/logs/scaInit.log'
 alias vmeplog='vi /var/opt/opwv/logs/MepApp.log'
 alias setupdev='source ~/bin/setup_dev_variables'
 
