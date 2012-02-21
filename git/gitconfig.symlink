@@ -1,0 +1,24 @@
+[user]
+	name = Maurice Kelly
+	email = osv-github@chatswood.org.uk
+[github]
+	user = mauricerkelly
+	token = 7c806891c0b97fc64f092f0eda61d633
+[color]
+	ui = true
+[git-p4]
+	user = mkelly
+	port = crownjewels.openwave.com:1667
+	client = mkelly_git
+[core]
+	excludesfile = /Users/mkelly/Dropbox/Development/Configuration/Git/excludes
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[mergetool]
+	keepBackup = true
+[difftool "Kaleidoscope"]
+	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
