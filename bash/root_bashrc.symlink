@@ -1,0 +1,6 @@
+alias psg='ps -ef | grep'
+alias sca='/etc/init.d/oamsca-v2.0'
+
+if [ -e $HOME/.bashrc ]; then
+    . $HOME/.bashrc
+fi
