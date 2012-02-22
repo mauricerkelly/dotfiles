@@ -1,7 +1,6 @@
 alias reload='. ~/.bashrc'
 alias g='grep'
 alias grep='grep --color'
+alias ls='ls -G'
 
-alias sdr='screen -d -R'
-alias sdrd='sdr dev'
-alias sdrr='sdr radius'
+alias sr='sudo su - root -c "bash --rcfile $HOME/.root_bashrc"'
