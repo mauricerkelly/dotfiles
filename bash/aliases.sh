@@ -1,6 +1,7 @@
-alias reload='. ~/.bashrc'
+alias cddf='cd $HOME/.dotfiles'
 alias g='grep'
 alias grep='grep --color'
 alias ls='ls -G'
-
+alias psg='ps -ef | grep'
+alias reload='. ~/.bashrc'
 alias sr='sudo su - root -c "bash --rcfile $HOME/.root_bashrc"'
