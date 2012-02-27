@@ -1,3 +1,4 @@
+alias cs='/etc/init.d/oamcs-v2.0'
 alias gdbp='gdb --pid'
 alias psg='ps -ef | grep'
 alias sca='/etc/init.d/oamsca-v2.0'
