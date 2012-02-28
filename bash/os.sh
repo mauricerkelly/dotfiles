@@ -18,7 +18,6 @@ elif [ $OPERSYS == "Linux" ]; then
     fi
     export LANG="en_GB.ISO-8859-1"
     export EDITOR="/bin/vi"
-    export VISUAL="/usr/X11R6/bin/gvim"
     export OS_IND="Lin"
 elif [ $OPERSYS == "Darwin" ]; then
     export OS_IND="OS X"
