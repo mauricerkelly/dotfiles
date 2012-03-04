@@ -1,0 +1,16 @@
+IdentityFile ~/.keys/id_rsa
+ControlMaster auto
+ControlPath /tmp/sshmux%h%p%r
+
+Host chatswood
+    User mkelly
+    Hostname ssh.chatswood.org.uk
+    Port 351
+
+Host redhat61
+    User mkelly
+    Hostname redhat61.myopwv.com
+
+Host work
+    User mkelly
+    Host bfs-x4150-12-xm2.bfs.openwave.com
