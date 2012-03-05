@@ -10,6 +10,7 @@ fi
 export LOGREGISTRATION_ROOT=$WORKSPACE_HEAD/ngp/registration
 export SRC_HEAD=$WORKSPACE_HEAD/ngp/andes
 export DERBASE=$BUILD_HEAD/ngp/andes/RedHat6
+export CXXTEST_DERBASE=$DERBASE
 export LD_LIBRARY_PATH=$DERBASE/lib:$DERBASE/thirdparty/lib
 
 export CFG=debug
