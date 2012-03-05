@@ -8,8 +8,8 @@
 	ui = true
 [git-p4]
 	user = mkelly
-	port = crownjewels.openwave.com:1667
-	client = mkelly_git
+	port = bfs-p4proxy.openwave.com:1667
+	client = mkelly_git_linux
 [core]
 	excludesfile = /Users/mkelly/Dropbox/Development/Configuration/Git/excludes
 [difftool "sourcetree"]
