@@ -1,6 +1,7 @@
 alias cddf='cd $HOME/.dotfiles'
 alias g='grep'
 alias grep='grep --color'
+alias h='history'
 alias ls='ls -G'
 alias psg='ps -ef | grep'
 alias reload='. ~/.bashrc'
