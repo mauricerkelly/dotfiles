@@ -18,10 +18,3 @@ export CFG=debug
 export GMK_COMPAT=5
 export CFG="debug"
 
-if [ ! -d $SRC_HEAD ]; then
-    echo SRC_HEAD is invalid: [$SRC_HEAD]
-fi
-
-if [ ! -d $DERBASE ]; then
-    echo DERBASE is invalid: [$DERBASE]
-fi
