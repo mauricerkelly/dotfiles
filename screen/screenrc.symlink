@@ -1,7 +1,15 @@
-#escape ^Zz
+startup_message off
+
+caption string "%?%F%{= Bk}%? %C%A %D %d-%m-%Y %{= kB} %t%= %?%F%{= Bk}%:%{= wk}%? %n "
+
+escape ^Za
 #defescape Bb
-caption always "%w"
-#hardstatus alwayslastline "This is a test..."
+#caption always "%w"
+
+hardstatus alwayslastline 
+#hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
+
 bind f eval "caption splitonly" #"hardstatus ignore"
 bind F eval "caption always"    #"hardstatus alwayslastline"
 defscrollback 5000

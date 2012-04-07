@@ -1,0 +1,4 @@
+source $HOME/.screenrc
+
+screen -t "iperf Server" iperf -s
+screen -t "iperf Client"
