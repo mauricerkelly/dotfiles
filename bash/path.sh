@@ -5,3 +5,4 @@ add_to_path $HOME/bin
 add_to_path $HOME/scripts
 add_to_path /usr/ccs/bin
 add_to_path /usr/vac/bin
+path_prepend /usr/local/bin
