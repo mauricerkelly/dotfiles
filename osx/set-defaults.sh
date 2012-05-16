@@ -18,3 +18,6 @@
 
 # Show the ~/Library folder
 #chflags nohidden ~/Library
+
+# Display the dock immediately
+defaults write com.apple.Dock autohide-delay -float 0
