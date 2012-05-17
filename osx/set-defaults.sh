@@ -17,7 +17,7 @@
 #defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 
 # Show the ~/Library folder
-#chflags nohidden ~/Library
+chflags nohidden ~/Library
 
 # Display the dock immediately
 defaults write com.apple.Dock autohide-delay -float 0
