@@ -21,3 +21,6 @@ chflags nohidden ~/Library
 
 # Display the dock immediately
 defaults write com.apple.Dock autohide-delay -float 0
+
+# Enable text selection in QuickLook
+defaults write com.apple.finder QLEnableTextSelection -bool TRUE
