@@ -1,0 +1,1 @@
+alias suac='sudo apachectl'
