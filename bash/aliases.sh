@@ -1,4 +1,5 @@
 alias cddf='cd $HOME/.dotfiles'
+alias cddr='cd $HOME/Dropbox'
 alias g='grep'
 alias grep='grep --color'
 alias h='history'
