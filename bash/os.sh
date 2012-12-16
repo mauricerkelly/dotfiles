@@ -10,11 +10,20 @@ if [ $OPERSYS == "SunOS" ]; then
     export EDITOR="/opt/local/bin/vim"
     export OS_IND="Sol"
 elif [ $OPERSYS == "Linux" ]; then
-    RH_VERS=`cat /etc/redhat-release`
-    if [[ $RH_VERS =~ "6.1" ]]; then
-        export PLATFORM="RedHat6"
-    else
-        export PLATFORM="RedHat5"
+    if [ -e /etc/redhat-release ]; then
+        RH_VERS=`cat /etc/redhat-release`
+        if [[ $RH_VERS =~ "6.1" ]]; then
+            export PLATFORM="RedHat6"
+        else
+            export PLATFORM="RedHat5"
+        fi
+    elif [[ -e /etc/debian_version ]]; then
+        DEB_VERS=`cat /etc/debian_version`
+        if [[ $DEB_VERS =~ "6." ]]; then
+            export PLATFORM="Debian6"
+        elif [[ $DEB_VERS =~ "5." ]]; then
+            export PLATFORM="Debian5"
+        fi
     fi
     export LANG="en_GB.ISO-8859-1"
     export EDITOR="/bin/vi"
