@@ -1,3 +1,7 @@
+if ! is_mac; then
+    return
+fi
+
 # Sets reasonable OS X defaults.
 #
 # Or, in other words, set shit how I like in OS X.
@@ -24,3 +28,8 @@ defaults write com.apple.Dock autohide-delay -float 0
 
 # Enable text selection in QuickLook
 defaults write com.apple.finder QLEnableTextSelection -bool TRUE
+
+# Lengthen timeout for switching between spaces to 3 secs (should be 0.75)
+defaults write com.apple.dock workspaces-edge-delay -float 3    
+
+

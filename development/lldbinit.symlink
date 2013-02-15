@@ -1,0 +1,9 @@
+script import os
+script import sys
+
+# So that files in my dir takes precedence.
+script sys.path[:0] = [os.path.expanduser("~/.lldbpy")]
+
+script import views
+
+command script add -f views.printvh printvh
