@@ -1,4 +1,5 @@
 alias sshb='ssh -p 351 ssh.chatswood.org.uk'
+alias sshch='ssh gcdadmin@charlie.gcdtech.com'
 alias sshgr='ssh -l root www.goreport.net'
 alias sshh='ssh -l root dev.gcdtech.com'
 alias sshmnw='ssh cw1.default.chatswood.uk0.bigv.io'

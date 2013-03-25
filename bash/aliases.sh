@@ -1,3 +1,4 @@
+alias ag='alias | grep'
 alias cddf='cd $HOME/.dotfiles'
 alias cddr='cd $HOME/Dropbox'
 alias g='grep'
