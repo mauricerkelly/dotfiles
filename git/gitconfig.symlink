@@ -20,9 +20,28 @@
 	trustExitCode = true
 [mergetool]
 	keepBackup = true
+	prompt = false
 [difftool "Kaleidoscope"]
-	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [difftool]
 	prompt = false
 [diff]
 	tool = Kaleidoscope
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[merge]
+	tool = Kaleidoscope
+[alias]
+    a = add
+    b = branch
+    c = commit
+    ca = commit -a
+    co = checkout
+    d = diff
+    f = fetch
+    ll = "log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+    p = push origin HEAD
+    pp = pull --prune
+    s = status -sb
+    su = submodule update
