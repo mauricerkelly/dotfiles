@@ -24,4 +24,4 @@ function _prompt_command() {
     PS1="`_git_prompt`"'[\u@\h - \w]\n$ '
 }
 
-PROMPT_COMMAND=_prompt_command
+#PROMPT_COMMAND=_prompt_command

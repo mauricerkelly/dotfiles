@@ -26,12 +26,12 @@
 [difftool]
 	prompt = false
 [diff]
-	tool = Kaleidoscope
+	tool = p4mergetool
 [mergetool "Kaleidoscope"]
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 	trustExitCode = true
 [merge]
-	tool = Kaleidoscope
+	tool = p4mergetool
 [alias]
     a = add
     b = branch
@@ -47,3 +47,7 @@
     su = submodule update
 [ghi]
 	token = 65f5b296308e37bf1b3a3ae1320d408c35edae1e
+[mergetool "p4mergetool"]
+	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $PWD/$BASE $PWD/$REMOTE $PWD/$LOCAL $PWD/$MERGED
+[difftool "p4mergetool"]
+	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $LOCAL $REMOTE

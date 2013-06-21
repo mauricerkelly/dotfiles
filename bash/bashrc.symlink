@@ -19,8 +19,3 @@ for config_file in `ls $DOTFILES/*/*.sh`; do source $config_file; done
 # load every completion after autocomplete loads
 for config_file in `ls $DOTFILES/*/completions`; do source $config_file; done
 
-# Add RVM to PATH for scripting
-add_to_path $HOME/.rvm/bin
-
-# Add Heroku toolbelt path
-add_to_path /usr/local/heroku/bin
