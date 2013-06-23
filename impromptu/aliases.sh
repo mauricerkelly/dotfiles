@@ -1,0 +1,1 @@
+alias cdim='cd ~/.impromptu'
