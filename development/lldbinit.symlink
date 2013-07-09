@@ -7,3 +7,4 @@ script sys.path[:0] = [os.path.expanduser("~/.lldbpy")]
 script import views
 
 command script add -f views.printvh printvh
+command regex rd 's/^[[:space:]]*$/po [[[UIApplication sharedApplication] keyWindow] recursiveDescription]/' 's/^(.+)$/po [%1 recursiveDescription]/'
