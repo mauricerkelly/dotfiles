@@ -42,6 +42,7 @@
     d = diff
     f = fetch
     ll = "log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+    mt = mergetool
     p = push origin HEAD
     pp = pull --prune
     s = status -sb
