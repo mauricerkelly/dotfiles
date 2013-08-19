@@ -12,6 +12,7 @@
 	client = mkelly_git_linux
 [core]
 	excludesfile = /Users/mkelly/Dropbox/Development/Configuration/Git/excludes
+	pager = less -x4
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
