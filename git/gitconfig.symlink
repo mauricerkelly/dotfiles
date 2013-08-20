@@ -46,6 +46,7 @@
     mt = mergetool
     p = push origin HEAD
     pp = pull --prune
+    psu = "push --set-upstream"
     s = status -sb
     su = submodule update
 [ghi]
