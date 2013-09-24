@@ -34,6 +34,8 @@ defaults write com.apple.dock workspaces-edge-delay -float 3
 
 return
 
+# Comes from https://github.com/mathiasbynens/dotfiles/blob/a168e9376dc2c3a525402a4d29c5cf17432b0296/.osx
+
 # Menu bar: disable transparency
 defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
 
