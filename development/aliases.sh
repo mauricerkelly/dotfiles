@@ -1,3 +1,5 @@
+alias cdxcp='cd $HOME/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins'
+
 alias gdbp='gdb --pid'
 
 alias jmeter='/Applications/JMeter/bin/jmeter.sh'

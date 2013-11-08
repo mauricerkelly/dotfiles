@@ -49,6 +49,7 @@ def prect(debugger, command_line, result, dict):
     if len(args) > 0:
         var = lldb.frame.FindVariable(args[0])
         print var.GetName()
+        print var.GetValue()
 
 
 def printvh(debugger, command_line, result, dict):
