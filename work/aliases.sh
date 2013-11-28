@@ -1,3 +1,5 @@
-# Unused right now
-
-alias cdcp='cd /Users/mkelly/Dropbox/Development/Git/GoReport'
+alias cdev='cd /Users/mkelly/Dropbox/Development/Git'
+alias cdgr='cdev; cd GoReport'
+alias cdpn='cdev; cd PropertyNewsAppv2'
+alias cdtzd='cdev; cd TaxiZappDispatchiOS'
+alias cdtzp='cdev; cd TaxiZappPassengeriOS'
