@@ -1,0 +1,3 @@
+[submodule "development/Library.Preferences.appCode20.deeplink"]
+	path = development/Library.Preferences.appCode20.deeplink
+	url = git@github.com:mauricerkelly/appCode20.git
