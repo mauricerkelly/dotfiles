@@ -1,5 +1,7 @@
-alias cdev='cd /Users/mkelly/Dropbox/Development/Git'
-alias cdgr='cdev; cd GoReport'
-alias cdpn='cdev; cd PropertyNewsAppv2'
-alias cdtzd='cdev; cd TaxiZappDispatchiOS'
-alias cdtzp='cdev; cd TaxiZappPassengeriOS'
+DEV_DIR=/Users/mkelly/Dropbox/Development/Git
+alias cdcc='cd $DEV_DIR/CocaColaOBPPC'
+alias cdev='cd $DEV_DIR'
+alias cdgr='cd $DEV_DIR/GoReport'
+alias cdpn='cd $DEV_DIR/PropertyNewsAppv2'
+alias cdtzd='cd $DEV_DIR/TaxiZappDispatchiOS'
+alias cdtzp='cd $DEV_DIR/TaxiZappPassengeriOS'
