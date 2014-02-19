@@ -2,6 +2,7 @@ if ! is_mac; then
     return
 fi
 
+alias cdlas='cd $HOME/Library/Application\ Support'
 alias dr='defaults read'
 alias dwr='defaults write'
 alias genctags='/Applications/BBEdit.app/Contents/Helpers/ctags --excmd=number --tag-relative=no --fields=+a+m+n+S -f tags -R "$PWD"'
