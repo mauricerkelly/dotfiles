@@ -9,3 +9,13 @@ script import views
 command script add -f views.printvh printvh
 command script add -f views.prect prect
 command regex rd 's/^[[:space:]]*$/po [[[UIApplication sharedApplication] keyWindow] recursiveDescription]/' 's/^(.+)$/po [%1 recursiveDescription]/'
+
+command alias pb p (BOOL)
+command alias pnsi p (NSInteger)
+command alias pnsu p (NSUInteger)
+command alias pcgr p (CGRect)
+command alias pcgf p (CGFrame)
+command alias pcgs p (CGSize)
+command alias pcgp p (CGPoint)
+
+command alias reload command source ~/.lldbinit
