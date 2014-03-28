@@ -58,3 +58,6 @@
 	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $LOCAL $REMOTE
 [push]
 	default = simple
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
