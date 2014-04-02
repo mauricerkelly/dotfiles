@@ -39,6 +39,7 @@
     bd = branch -d
     c = commit
     ca = commit -a
+    cf = checkout --
     co = checkout
     d = diff
     f = fetch
