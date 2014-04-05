@@ -1,0 +1,27 @@
+'exception-reporting':
+  'userId': '5392f155-a911-a1c0-cdd2-604cd7bf4ef0'
+'release-notes':
+  'viewedVersion': '0.81.0'
+'welcome':
+  'showOnStartup': false
+'metrics':
+  'userId': 'd96913c83b39b64e17220206b7c618adf83dbb33'
+'editor':
+  'fontSize': 11
+  'showIndentGuide': true
+  'softWrapAtPreferredLineLength': true
+  'softWrap': true
+  'preferredLineLength': 120
+'core':
+  'themes': [
+    'atom-light-ui'
+    'tomorrow'
+  ]
+  'ignoredNames': [
+    '.git'
+    '.svn'
+    '.DS_Store'
+  ]
+  'disabledPackages': [
+    'language-rspec'
+  ]
