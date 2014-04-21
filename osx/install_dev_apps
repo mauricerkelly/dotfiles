@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if ! brew_cask_package_is_installed; then
+  echo "Please install 'brew install cask' first"
+  exit 1
+fi
+
+install_cask p4merge
+install_cask xscope
