@@ -1,7 +1,7 @@
 'exception-reporting':
   'userId': '5392f155-a911-a1c0-cdd2-604cd7bf4ef0'
 'release-notes':
-  'viewedVersion': '0.84.0'
+  'viewedVersion': '0.89.0'
 'welcome':
   'showOnStartup': false
 'metrics':
@@ -23,3 +23,7 @@
     '.DS_Store'
   ]
   'disabledPackages': []
+'rspec':
+  'command': 'bundle exec rspec'
+'cucumber-runner':
+  'command': 'bundle exec cucumber'
