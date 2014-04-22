@@ -5,5 +5,15 @@ if ! brew_cask_package_is_installed; then
   exit 1
 fi
 
+install_cask anvil
+install_cask appcode
+install_cask base
+install_cask hex-fiend
+install_cask hype
+install_cask reveal
+install_cask sequel-pro
+install_cask simpholders
+install_cask tower
+install_cask trailer
 install_cask p4merge
 install_cask xscope
