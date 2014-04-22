@@ -16,3 +16,4 @@ install_cask launchbar
 install_cask little-snitch
 install_cask skype
 install_cask textexpander
+install_cask superduper
