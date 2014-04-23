@@ -1,3 +1,4 @@
 .node-gyp/
 packages/
 storage/
+npm-debug.log

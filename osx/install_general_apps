@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+if ! brew_cask_package_is_installed; then
+  echo "Please install 'brew install cask' first"
+  exit 1
+fi
+
+install_cask airfoil
+install_cask ibank
+install_cask kiwi
+install_cask marked
+install_cask nvalt
+install_cask omnigraffle
+install_cask rdio
+install_cask transmit
+
+# missing casks
+# metaz
+# paintcode
+# transporter desktop
