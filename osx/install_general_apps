@@ -12,9 +12,9 @@ install_cask marked
 install_cask nvalt
 install_cask omnigraffle
 install_cask rdio
+install_cask spotify
 install_cask transmit
 
 # missing casks
 # metaz
-# paintcode
 # transporter desktop
