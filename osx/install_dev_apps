@@ -10,6 +10,7 @@ install_cask appcode
 install_cask base
 install_cask hex-fiend
 install_cask hype
+install_cask iphone-configuration-utility
 install_cask reveal
 install_cask sequel-pro
 install_cask simpholders
