@@ -19,3 +19,4 @@ for config_file in `ls $DOTFILES/*/*.sh`; do source $config_file; done
 # load every completion after autocomplete loads
 for config_file in `ls $DOTFILES/*/completions`; do source $config_file; done
 
+export HISTCONTROL=ignoreboth:erasedups
