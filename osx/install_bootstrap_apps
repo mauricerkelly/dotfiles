@@ -5,6 +5,7 @@ if ! brew_cask_package_is_installed; then
   exit 1
 fi
 
+install_cask atom
 install_cask bartender
 install_cask crashplan
 install_cask dropbox
