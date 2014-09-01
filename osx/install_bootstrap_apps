@@ -7,6 +7,7 @@ fi
 
 install_cask atom
 install_cask bartender
+install_cask choosy
 install_cask crashplan
 install_cask dropbox
 install_cask evernote
