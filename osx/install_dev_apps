@@ -17,5 +17,4 @@ install_cask simpholders
 install_cask tower
 install_cask trailer
 install_cask p4merge
-install_cask paintcode
 install_cask xscope
