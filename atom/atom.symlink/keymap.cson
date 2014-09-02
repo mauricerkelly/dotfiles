@@ -16,3 +16,8 @@
 #   'ctrl-P': 'core:move-up'
 #   'ctrl-p': 'core:move-down'
 #
+
+".workspace .editor:not(.mini)": {
+  "cmd-shift-up": "editor:move-line-up",
+  "cmd-shift-down": "editor:move-line-down",
+}

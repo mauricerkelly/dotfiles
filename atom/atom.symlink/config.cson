@@ -1,7 +1,7 @@
 'exception-reporting':
   'userId': '5392f155-a911-a1c0-cdd2-604cd7bf4ef0'
 'release-notes':
-  'viewedVersion': '0.90.0'
+  'viewedVersion': '0.95.0'
 'welcome':
   'showOnStartup': false
 'metrics':
@@ -12,6 +12,7 @@
   'softWrapAtPreferredLineLength': true
   'softWrap': true
   'preferredLineLength': 120
+  'tabLength': 4
 'core':
   'themes': [
     'atom-light-ui'
@@ -23,6 +24,7 @@
     '.DS_Store'
   ]
   'disabledPackages': []
+  'useReactEditor': true
 'rspec':
   'command': 'bundle exec rspec'
 'cucumber-runner':
