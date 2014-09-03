@@ -20,3 +20,5 @@ command alias pcgs p (CGSize)
 command alias pcgp p (CGPoint)
 
 command alias reload command source ~/.lldbinit
+
+command script import /usr/local/opt/chisel/libexec/fblldb.py
