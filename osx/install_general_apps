@@ -6,6 +6,7 @@ if ! brew_cask_package_is_installed; then
 fi
 
 install_cask airfoil
+install_cask fluid
 install_cask ibank
 install_cask kiwi
 install_cask marked
