@@ -6,6 +6,7 @@ if ! brew_cask_package_is_installed; then
 fi
 
 install_cask airfoil
+install_cask airserver
 install_cask fluid
 install_cask ibank
 install_cask kiwi
@@ -15,9 +16,11 @@ install_cask nvalt
 install_cask omnigraffle
 install_cask omnioutliner
 install_cask rdio
+install_cask slack
+install_cask sonos
 install_cask spotify
 install_cask transmit
+install_cask transporter-desktop
 
 # missing casks
 # metaz
-# transporter desktop
