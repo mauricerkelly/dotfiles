@@ -17,6 +17,7 @@ install_cask iterm2
 install_cask launchbar
 install_cask little-snitch
 install_cask mailbox
+install_cask onepassword
 install_cask skype
 install_cask superduper
 install_cask textexpander
