@@ -13,6 +13,7 @@ install_cask dropbox
 install_cask evernote
 install_cask google-chrome
 install_cask hipchat
+install_cask istat-menus
 install_cask iterm2
 install_cask launchbar
 install_cask little-snitch
