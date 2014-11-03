@@ -38,6 +38,7 @@
     a = add
     b = branch
     bd = branch -d
+    bdf = branch -D
     c = commit
     ca = commit -a
     cf = checkout --
