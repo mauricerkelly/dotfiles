@@ -1,0 +1,6 @@
+# ~/.floorc
+username mkelly
+api_key user_rltfmucmvl
+secret z5jr3g8bty6qe3ufqfaooswpf
+# Vim users: Change "mvim" to your vim command.
+vim_executable mvim
