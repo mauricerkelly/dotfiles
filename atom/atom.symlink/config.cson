@@ -15,7 +15,6 @@
     'preferredLineLength': 120
     'tabLength': 4
     'softWrapped': true
-    'invisibles': {}
   'core':
     'themes': [
       'atom-light-ui'
