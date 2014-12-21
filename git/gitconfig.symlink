@@ -14,6 +14,7 @@
 	excludesfile = /Users/mkelly/Dropbox/Development/Configuration/Git/excludes
 	pager = less -x4
 	autocrlf = input
+	editor = /usr/bin/vi
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -53,6 +54,7 @@
     psu = "push --set-upstream"
     s = status -sb
     su = submodule update
+	pushitrealgood = push --force
 [ghi]
 	token = 65f5b296308e37bf1b3a3ae1320d408c35edae1e
 [mergetool "p4mergetool"]
@@ -62,7 +64,8 @@
 [push]
 	default = simple
 [filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
 [gitsh]
     defaultCommand = status -sb
