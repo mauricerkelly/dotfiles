@@ -15,6 +15,7 @@
     'preferredLineLength': 120
     'tabLength': 4
     'softWrapped': true
+    'invisibles': {}
   'core':
     'themes': [
       'atom-light-ui'
@@ -30,7 +31,6 @@
     'command': 'bundle exec rspec'
   'cucumber-runner':
     'command': 'bundle exec cucumber'
-  'rails-rspec': {}
 '.js.rails.source source.jquery.js':
   'editor': {}
 '.rails.rjs.ruby.source':
@@ -46,6 +46,10 @@
   'editor': {}
 '.rspec.ruby.source':
   'editor': {}
+'.basic.html.text':
+  'editor':
+    'preferredLineLength': 110
+    'tabLength': 2
 '.objc.source ++ *':
   'editor': {}
 '.source.swift':
