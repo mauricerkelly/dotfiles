@@ -1,0 +1,10 @@
+'SK Register':
+  'title': 'SK Register'
+  'paths': [
+    '/Users/mkelly/Development/SK/ipad-register'
+  ]
+'Dotfiles':
+  'title': 'Dotfiles'
+  'paths': [
+    '/Users/mkelly/.dotfiles'
+  ]

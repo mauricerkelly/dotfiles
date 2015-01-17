@@ -1,74 +1,72 @@
-'global':
-  'exception-reporting':
-    'userId': '5392f155-a911-a1c0-cdd2-604cd7bf4ef0'
-  'release-notes':
-    'viewedVersion': '0.95.0'
-  'welcome':
-    'showOnStartup': false
-  'metrics':
-    'userId': 'd96913c83b39b64e17220206b7c618adf83dbb33'
-  'editor':
-    'fontSize': 11
-    'showIndentGuide': true
-    'softWrapAtPreferredLineLength': true
-    'softWrap': true
-    'preferredLineLength': 120
-    'tabLength': 4
-    'softWrapped': true
-    'invisibles': {}
-  'core':
-    'themes': [
-      'atom-light-ui'
-      'tomorrow'
+"*":
+  "exception-reporting":
+    userId: "5392f155-a911-a1c0-cdd2-604cd7bf4ef0"
+  "release-notes":
+    viewedVersion: "0.95.0"
+  welcome:
+    showOnStartup: false
+  metrics:
+    userId: "d96913c83b39b64e17220206b7c618adf83dbb33"
+  editor:
+    fontSize: 12
+    showIndentGuide: true
+    preferredLineLength: 120
+    tabLength: 4
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+    invisibles: {}
+  core:
+    ignoredNames: [
+      ".git"
+      ".svn"
+      ".DS_Store"
     ]
-    'ignoredNames': [
-      '.git'
-      '.svn'
-      '.DS_Store'
+    themes: [
+      "atom-light-ui"
+      "tomorrow"
     ]
-    'useReactEditor': true
-  'rspec':
-    'command': 'bundle exec rspec'
-  'cucumber-runner':
-    'command': 'bundle exec cucumber'
-'.js.rails.source source.jquery.js':
-  'editor': {}
-'.rails.rjs.ruby.source':
-  'editor': {}
-'.rails.ruby.source':
-  'editor': {}
-'.html.ruby.text':
-  'editor': {}
-'.erb.html.text':
-  'editor':
-    'tabLength': 2
-'.ruby.source.sql':
-  'editor': {}
-'.rspec.ruby.source':
-  'editor': {}
-'.basic.html.text':
-  'editor':
-    'preferredLineLength': 110
-    'tabLength': 2
-'.objc.source ++ *':
-  'editor': {}
-'.source.swift':
-  'editor': {}
-'.gfm.source':
-  'editor': {}
-'.litcoffee.source':
-  'editor':
-    'tabLength': 2
-'.ruby.source':
-  'editor':
-    'tabLength': 2
-'.shell.source':
-  'editor':
-    'tabLength': 2
-'.objc.source':
-  'editor': {}
-'.source.strings':
-  'editor': {}
-'.coffee.source':
-  'editor':
-    'tabLength': 2
+  rspec:
+    command: "bundle exec rspec"
+  "cucumber-runner":
+    command: "bundle exec cucumber"
+".js.rails.source source.jquery.js":
+  editor: {}
+".rails.rjs.ruby.source":
+  editor: {}
+".basic.html.text":
+  editor:
+    preferredLineLength: 110
+    tabLength: 2
+".rspec.ruby.source":
+  editor: {}
+".ruby.source.sql":
+  editor: {}
+".erb.html.text":
+  editor:
+    tabLength: 2
+".html.ruby.text":
+  editor: {}
+".rails.ruby.source":
+  editor: {}
+".objc.source ++ *":
+  editor: {}
+".coffee.source":
+  editor:
+    tabLength: 2
+".source.strings":
+  editor: {}
+".objc.source":
+  editor: {}
+".shell.source":
+  editor:
+    tabLength: 2
+".ruby.source":
+  editor:
+    tabLength: 2
+".litcoffee.source":
+  editor:
+    tabLength: 2
+".gfm.source":
+  editor: {}
+".source.swift":
+  editor: {}
