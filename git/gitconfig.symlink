@@ -17,7 +17,7 @@
 	editor = /usr/bin/vi
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
@@ -42,6 +42,7 @@
     bdf = branch -D
     c = commit
     ca = commit -a
+	cdf = clean -d -f
     cf = checkout --
     co = checkout
     d = diff
@@ -52,6 +53,7 @@
     pod = push origin --delete
     pp = pull --prune
     psu = "push --set-upstream"
+	r = remote
     s = status -sb
     su = submodule update
 	pushitrealgood = push --force
