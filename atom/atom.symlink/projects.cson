@@ -1,10 +1,20 @@
+'Dotfiles':
+  'title': 'Dotfiles'
+  'paths': [
+    '/Users/mkelly/.dotfiles'
+  ]
+'MacNabb Waste':
+  'title': 'MacNabb Waste'
+  'paths': [
+    '/Users/mkelly/Dropbox/Sites/macnabbwaste.co.uk'
+  ]
 'SK Register':
   'title': 'SK Register'
   'paths': [
     '/Users/mkelly/Development/SK/ipad-register'
   ]
-'Dotfiles':
-  'title': 'Dotfiles'
+'SK SDK':
+  'title': 'SK SDK'
   'paths': [
-    '/Users/mkelly/.dotfiles'
+    '/Users/mkelly/Development/SK/SKBackofficeSDK'
   ]
