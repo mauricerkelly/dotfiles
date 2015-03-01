@@ -1,5 +1,6 @@
 DEV_DIR=/Users/mkelly/Dropbox/Development/Git
 LOCAL_DEV_DIR=/Users/mkelly/Development/SK
+alias cdbo='cd $LOCAL_DEV_DIR/backoffice'
 alias cdev='cd $DEV_DIR'
 alias cdevsk='cd $LOCAL_DEV_DIR'
 alias cdir='cd $LOCAL_DEV_DIR/ipad-register; rvm use @register'
