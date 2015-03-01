@@ -22,3 +22,6 @@ Servers/
 # Maven build directories #
 ###########################
 target/
+
+# Personal Notes Directory #
+mo-notes/
