@@ -12,18 +12,18 @@ function skdiff() {
 
 }
 
-function show-citests() {
+function showcitests() {
   git update-index --no-assume-unchanged Register.xcodeproj/xcshareddata/xcschemes/CITests1.xcscheme
   git update-index --no-assume-unchanged Register.xcodeproj/xcshareddata/xcschemes/CITests2.xcscheme
   git update-index --no-assume-unchanged Register.xcodeproj/xcshareddata/xcschemes/CITests3.xcscheme
 }
 
-function hide-citests() {
+function hidecitests() {
   git update-index --assume-unchanged Register.xcodeproj/xcshareddata/xcschemes/CITests1.xcscheme
   git update-index --assume-unchanged Register.xcodeproj/xcshareddata/xcschemes/CITests2.xcscheme
   git update-index --assume-unchanged Register.xcodeproj/xcshareddata/xcschemes/CITests3.xcscheme
 }
 
 export -f skdiff
-export -f show-citests
-export -f hide-citests
+export -f showcitests
+export -f hidecitests
