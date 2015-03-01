@@ -18,3 +18,13 @@
   'paths': [
     '/Users/mkelly/Development/SK/SKBackofficeSDK'
   ]
+'SK Register Wiki':
+  'title': 'SK Register Wiki'
+  'paths': [
+    '/Users/mkelly/Dropbox/Development/Git/ipad-register.wiki'
+  ]
+'SK Backoffice':
+  'title': 'SK Backoffice'
+  'paths': [
+    '/Users/mkelly/Development/SK/backoffice'
+  ]
