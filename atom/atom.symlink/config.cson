@@ -10,7 +10,7 @@
   editor:
     fontSize: 12
     showIndentGuide: true
-    preferredLineLength: 120
+    preferredLineLength: 110
     tabLength: 4
     softWrap: true
     softWrapAtPreferredLineLength: true
@@ -25,38 +25,29 @@
       "atom-light-ui"
       "tomorrow"
     ]
+    disabledPackages: [
+      "go-plus"
+      "spell-check"
+    ]
   rspec:
     command: "bundle exec rspec"
   "cucumber-runner":
     command: "bundle exec cucumber"
-".js.rails.source source.jquery.js":
-  editor: {}
-".rails.rjs.ruby.source":
-  editor: {}
+  "file-types":
+    $debug: true
+    "^Podfile$": "source.ruby"
+  "autocomplete-plus": {}
+  "spell-check": {}
 ".basic.html.text":
   editor:
     preferredLineLength: 110
     tabLength: 2
-".rspec.ruby.source":
-  editor: {}
-".ruby.source.sql":
-  editor: {}
 ".erb.html.text":
   editor:
     tabLength: 2
-".html.ruby.text":
-  editor: {}
-".rails.ruby.source":
-  editor: {}
-".objc.source ++ *":
-  editor: {}
 ".coffee.source":
   editor:
     tabLength: 2
-".source.strings":
-  editor: {}
-".objc.source":
-  editor: {}
 ".shell.source":
   editor:
     tabLength: 2
@@ -66,7 +57,6 @@
 ".litcoffee.source":
   editor:
     tabLength: 2
-".gfm.source":
-  editor: {}
-".source.swift":
-  editor: {}
+".diff.source":
+  editor:
+    preferredLineLength: 110
