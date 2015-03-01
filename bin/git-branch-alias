@@ -1,0 +1,216 @@
+#!/bin/bash
+# git branch-alias
+# Version 1.07
+# Author: Phil S.
+
+# Creates branch aliases, so that you can refer to a long branch name
+# by a convenient short alias. This is just a "do what I mean" wrapper
+# around git symbolic-ref, but without the (considerable) risk of
+# trashing a branch if you get your arguments wrong
+
+# Examples:
+# git branch-alias short some-overly-long-branch-name # creates alias
+# git branch-alias short # creates alias for current branch
+# git log short
+# git checkout short
+# git push origin short # pushes the branch, not the alias/reference
+# git branch-alias --delete short
+
+# Caveats:
+# Although everything else I've tried works seamlessly, I note that
+# git merge <alias> will cause the alias name to be mentioned in the
+# commit message, rather than the real branch. It would be nicer if
+# the branch name appeared.
+
+# Compatibility:
+# Developed with git version 1.7.12.4
+# Tested with git version 1.9.0
+#
+# Related git changes between versions 1.7.12.4 and 1.9.0:
+#
+# 1.8.0.1
+#  * A symbolic ref refs/heads/SYM was not correctly removed with "git
+#    branch -d SYM"; the command removed the ref pointed by SYM
+#    instead.
+#
+# 1.8.1
+#  * "git symbolic-ref" learned the "-d $symref" option to delete the
+#    named symbolic ref, which is more intuitive way to spell it than
+#    "update-ref -d --no-deref $symref".
+
+#cwd=$(git rev-parse --show-toplevel)
+git=$(git rev-parse --git-dir)
+if [ $? -ne 0 ]; then
+    exit 1
+fi
+
+command=$(basename $0)
+command="git ${command##git-}"
+
+# Process command line options
+# MRK note: I stripped out the long option support because OS X couldn't
+# handle it
+opts=$(getopt hd "$@")
+
+if [ $? -eq 0 ]; then
+    eval set -- ${opts}
+    while true; do
+        case "$1" in
+            ( -d ) delete=1; shift;;
+            ( -h ) help=1; shift; break;;
+            ( -- ) shift; break;;
+        esac
+    done
+else
+    help=1 # getopt returned (and reported) an error.
+fi
+
+# Process non-option arguments
+symref=$1
+branch=$2
+
+if [ -z "${symref}" ]; then
+    help=1
+fi
+
+if [ -n "${help}" ]; then
+    echo "\
+Usage:
+${command} <alias> [ <branch> ]
+${command} [ --delete | -d ] <alias>
+
+Creates a symbolic reference <alias> referring to <branch>.
+<branch> defaults to the current checked-out branch.
+
+This symbolic reference acts as an alias for <branch>, and can be
+used in its place. More specifically, it WILL be dereferenced to
+its target in nearly all situations, so for any given command you
+should treat every usage of <alias> as if it were actually <branch>.
+
+To safely delete a branch alias, use:
+${command} --delete <alias>
+
+WARNING: These symbolic references appear in your branch list as:
+ <alias> -> <branch>
+and so you might be tempted to try to delete them like a branch:
+ git branch -d <alias>
+
+However this can cause problems. In git versions prior to 1.8.0.1
+<alias> will be dereferenced and you will instead delete the
+branch it refers to (git will allow this even if you currently
+have that branch checked out), and the symbolic reference will
+still remain (referencing a branch which is no longer available).
+
+In later versions of git the <alias> will be deleted rather than
+the branch; however git will still not check to see whether you
+currently have <alias> checked out, and will not prevent you
+from deleting it in that situation. This will leave your HEAD ref
+in an invalid state. Using ${command} -d <alias> resolves this
+situation by switching HEAD to <alias>'s target.
+
+"
+    exit 0
+fi
+
+# Use the current branch by default.
+if [ -z "${branch}" ]; then
+    branch=$(git symbolic-ref -q HEAD)
+    if [ $? -ne 0 ]; then
+        echo "Could not establish current HEAD." >&2
+        exit 1
+    fi
+fi
+
+# We expect plain branch names, but also accept the fully-qualified
+# (refs/heads/NAME) paths needed by git symbolic-ref; so strip that
+# refs/heads/ prefix if it is specified.
+branch=${branch##refs/heads/}
+symref=${symref##refs/heads/}
+
+# Deleting a symref.
+if [ -n "${delete}" ]; then
+    if [ ! -f "${git}/refs/heads/${symref}" ]; then
+        echo "Symbolic reference refs/heads/${symref} does not exist." >&2
+        exit 1
+    fi
+
+    # Verify that it IS a symbolic reference
+    if ! git show-ref --verify --heads --quiet "refs/heads/${symref}"; then
+        echo "refs/heads/${symref} is not a valid reference." >&2
+        exit 1
+    fi
+    if ! git symbolic-ref "refs/heads/${symref}" >/dev/null; then
+        echo "Error validating refs/heads/${symref} as symbolic reference." >&2
+        exit 1
+    fi
+
+    # If we currently have <symref> checked out, deleting it is bad
+    # (as HEAD would no longer be a valid reference). I believe we do
+    # need to inspect the file here, as attempting to read the HEAD
+    # reference via git dereferences it to its target branch, and thus
+    # we are unable to distinguish between the branch and the symref.
+    if grep -q "^ref: refs/heads/${symref}\$" "${git}/HEAD"; then
+        echo "Cannot delete the currently checked out symbolic reference."
+        branch=$(git symbolic-ref -q HEAD)
+        if [ $? -ne 0 ]; then
+            echo "Could not establish current HEAD." >&2
+            exit 1
+        fi
+        echo "Switching HEAD to target branch ${branch}"
+        # By using git symbolic-ref HEAD to find the target ref
+        # and setting HEAD to that target, nothing really changes,
+        # but we can now delete the reference safely.
+        if ! git symbolic-ref HEAD "${branch}"; then
+            echo "Error updating HEAD from ${symref} to ${branch}" >&2
+            echo "Aborting." >&2
+            exit 1
+        fi
+    fi
+
+    # Delete the reference.
+    # git 1.8.1+ provides: git symbolic-ref --delete <symref>
+    # but older versions do not include that option, so we use
+    # the backwards-compatible command.
+    echo "Deleting symbolic reference refs/heads/${symref}"
+    git update-ref -d --no-deref "refs/heads/${symref}"
+    exit $?
+fi
+
+# Creating a new symbolic reference.
+
+# Error checking. git symbolic-ref doesn't really do any, and will
+# happily mess up your branches; particularly if you get the arguments
+# the wrong way around (treating it like ln -s is a really bad idea).
+if [ ! -f "${git}/refs/heads/${branch}" ]; then
+    echo "${git}/refs/heads/${branch}"
+    echo "Target refs/heads/${branch} does not exist." >&2
+    exit 1
+fi
+
+if [ -f "${git}/refs/heads/${symref}" ]; then
+    target=$(git symbolic-ref "refs/heads/${symref}")
+    if [ $? -eq 0 ]; then
+        echo "Symbolic reference refs/heads/${symref} already exists:" >&2
+        echo "  ${symref} -> ${target##refs/heads/}" >&2
+        echo "To remove it, use: ${command} --delete ${symref}" >&2
+    else
+        echo "File refs/heads/${symref} already exists" >&2
+        echo "(and is not a symbolic reference!)" >&2
+    fi
+    exit 1
+fi
+if git show-ref --verify --heads --quiet "refs/heads/${symref}"; then
+    # n.b. I'm pretty sure this is unreachable, given the previous block.
+    echo "refs/heads/${symref} is a valid reference without a file!?" >&2
+    exit 1
+fi
+
+# The parameters are good.
+# Generate the reference and display the confirmed result.
+if git symbolic-ref "refs/heads/${symref}" "refs/heads/${branch}"; then
+    target=$(git symbolic-ref "refs/heads/${symref}")
+    echo "  ${symref} -> ${target##refs/heads/}"
+else
+    echo "Failed to create branch alias." >&2
+    exit 1
+fi
