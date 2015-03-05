@@ -1,6 +1,6 @@
 function is_linux() {
     KERNEL_TYPE=`uname -s`
-    if [ $KERNEL_TYPE == "Linux" ]; then
+    if [[ $KERNEL_TYPE == "Linux" ]]; then
         return 0;
     else
         return 1;
@@ -9,7 +9,7 @@ function is_linux() {
 
 function is_mac() {
     KERNEL_TYPE=`uname -s`
-    if [ $KERNEL_TYPE == "Darwin" ]; then
+    if [[ $KERNEL_TYPE == "Darwin" ]]; then
         return 0;
     else
         return 1;
