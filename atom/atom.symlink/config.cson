@@ -38,6 +38,12 @@
     "^Podfile$": "source.ruby"
   "autocomplete-plus": {}
   "spell-check": {}
+  minimap:
+    plugins:
+      "git-diff": true
+      selection: true
+      "find-and-replace": true
+      "highlight-selected": true
 ".basic.html.text":
   editor:
     preferredLineLength: 110
