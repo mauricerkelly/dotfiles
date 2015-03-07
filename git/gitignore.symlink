@@ -23,5 +23,20 @@ Servers/
 ###########################
 target/
 
+# Xcode files #
+###############
+xcuserdata/
+.*
+*.mode1v3
+*.pbxuser
+
 # Personal Notes Directory #
+############################
 mo-notes/
+
+# Old shite #
+#############
+opwv-server
+plugins/identity
+third-party/axis2/axis2-1.5.1/
+Log.java

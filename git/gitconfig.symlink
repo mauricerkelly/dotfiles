@@ -11,7 +11,7 @@
 	port = bfs-p4proxy.openwave.com:1667
 	client = mkelly_git_linux
 [core]
-	excludesfile = /Users/mkelly/Dropbox/Development/Configuration/Git/excludes
+	excludesfile = ~/.gitignore
 	pager = less -x4
 	autocrlf = input
 	editor = /usr/bin/vi
