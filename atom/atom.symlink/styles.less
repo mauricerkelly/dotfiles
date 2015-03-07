@@ -92,3 +92,11 @@
 .editor .cursor {
 
 }
+
+@lighterCursorBackground: rgba(100, 100, 100, 0.1);
+
+.atom-text-editor, :host, atom-text-editor, atom-text-editor::shadow {
+  .line.highlight-line {
+    background: @lighterCursorBackground !important;
+  }
+}
