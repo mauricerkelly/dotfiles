@@ -3,7 +3,6 @@
 	email = osv-github@chatswood.org.uk
 [github]
 	user = mauricerkelly
-	token = 7c806891c0b97fc64f092f0eda61d633
 [color]
 	ui = true
 [git-p4]
