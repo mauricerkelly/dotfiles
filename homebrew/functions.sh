@@ -36,7 +36,9 @@ function install_cask() {
   return 1
 }
 
-export -f brew_package_is_installed
-export -f brew_cask_package_is_installed
-export -f brew_cask_is_installed
-export -f install_cask
+if [[ $SHELL == "/usr/local/bin/bash" ]]; then
+  export -f brew_package_is_installed
+  export -f brew_cask_package_is_installed
+  export -f brew_cask_is_installed
+  export -f install_cask
+fi

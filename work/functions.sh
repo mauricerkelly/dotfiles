@@ -24,6 +24,8 @@ function hidecitests() {
   git update-index --assume-unchanged Register.xcodeproj/xcshareddata/xcschemes/CITests3.xcscheme
 }
 
-export -f skdiff
-export -f showcitests
-export -f hidecitests
+if [[ $SHELL == "/usr/local/bin/bash" ]]; then
+  export -f skdiff
+  export -f showcitests
+  export -f hidecitests
+fi
