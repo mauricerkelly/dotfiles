@@ -23,5 +23,6 @@ ZSH_CUSTOM=$DOTFILES/zsh/oh-my-zsh-custom
 source $ZSH/oh-my-zsh.sh
 
 for alias_file in `ls $DOTFILES/*/aliases.sh`; do source $alias_file; done
+for function_file in `ls $DOTFILES/*/functions.sh`; do source $function_file; done
 
 export HISTCONTROL=ignoreboth:erasedups
