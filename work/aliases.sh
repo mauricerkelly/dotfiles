@@ -1,6 +1,7 @@
 DEV_DIR=/Users/mkelly/Dropbox/Development/Git
 LOCAL_DEV_DIR=/Users/mkelly/Development/SK
 alias cdbo='cd $LOCAL_DEV_DIR/backoffice'
+alias cdbwa='cd "/Users/mkelly/Dropbox/Documents/Writing/Build WatchKit Apps"'
 alias cdev='cd $DEV_DIR'
 alias cdevsk='cd $LOCAL_DEV_DIR'
 alias cdir='cd $LOCAL_DEV_DIR/ipad-register; rvm use @register'
@@ -8,3 +9,6 @@ alias cdsdk='cd $LOCAL_DEV_DIR/SKBackofficeSDK; rvm use @sdk'
 alias cdstg='cd "/Users/mkelly/Dropbox/Documents/Writing/Swift Translation Guide"'
 alias cdtr='cd $DEV_DIR/Trailer'
 alias cdxcp='cd $DEV_DIR/XCPretty'
+alias pusdk='be pod update SKBackofficeSDK'
+alias sshci1='ssh_tunnel administrator@208.52.161.93 5921'
+alias sshci2='ssh_tunnel administrator@208.52.182.38 5922'

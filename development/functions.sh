@@ -13,5 +13,4 @@ function xcopen()
     done
 
     echo "No workspaces or projects to open"
-
 }
