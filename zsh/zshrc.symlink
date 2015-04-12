@@ -5,24 +5,9 @@ COMPLETION_WAITING_DOTS="true"
 
 plugins=(atom git brew brew-cask osx rvm pod gitfast gem dirhistory bundler rails zsh_reload)
 
-# User configuration
-export DOTFILES="$HOME/.dotfiles"
-
-# load essential functions
-if [[ -e $DOTFILES/functions ]]; then
-    for functions_file in `ls $DOTFILES/functions/*.sh`;
-        do source $functions_file;
-    done
-fi
-
-if [[ -e $DOTFILES/shell/path.sh ]]; then
-    source $DOTFILES/shell/path.sh
-fi
-
 ZSH_CUSTOM=$DOTFILES/zsh/oh-my-zsh-custom
 source $ZSH/oh-my-zsh.sh
 
 for alias_file in `ls $DOTFILES/*/aliases.sh`; do source $alias_file; done
-for function_file in `ls $DOTFILES/*/functions.sh`; do source $function_file; done
 
 export HISTCONTROL=ignoreboth:erasedups
