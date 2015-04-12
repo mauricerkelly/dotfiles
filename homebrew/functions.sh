@@ -1,7 +1,7 @@
 function brew_package_is_installed() {
   installed_packages=`brew list -1`
   for installed_package in $installed_packages; do
-    if [ $installed_package == $1 ]; then
+    if [[ $installed_package == $1 ]]; then
       return 0
     fi
   done
@@ -9,15 +9,24 @@ function brew_package_is_installed() {
   return 1
 }
 
+function brew_tap_is_installed() {
+  installed_package=`brew tap | grep "$1"`
+  if [[ $installed_package == $1 ]]; then
+    return 0
+  fi
+
+  return 1
+}
+
 function brew_cask_package_is_installed() {
-  brew_package_is_installed brew-cask
+  brew_tap_is_installed "caskroom/cask"
   return $?
 }
 
 function brew_cask_is_installed() {
   installed_casks=`brew cask list`
   for installed_cask in $installed_casks; do
-    if [ $installed_cask == $1 ]; then
+    if [[ $installed_cask == $1 ]]; then
       return 0
     fi
   done
@@ -27,7 +36,7 @@ function brew_cask_is_installed() {
 
 function install_cask() {
   brew_cask_is_installed $1
-  if [ $? == 1 ]; then
+  if [[ $? == 1 ]]; then
     brew cask install $1
     return 0
   fi

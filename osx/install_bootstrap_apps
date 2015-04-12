@@ -1,4 +1,6 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
+
+brew_cask_package_is_installed
 
 if ! brew_cask_package_is_installed; then
   echo "Please install 'brew install cask' first"
