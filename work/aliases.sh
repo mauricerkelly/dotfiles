@@ -10,5 +10,5 @@ alias cdstg='cd "/Users/mkelly/Dropbox/Documents/Writing/Swift Translation Guide
 alias cdtr='cd $DEV_DIR/Trailer'
 alias cdxcp='cd $DEV_DIR/XCPretty'
 alias pusdk='be pod update SKBackofficeSDK'
-alias sshci1='ssh_tunnel administrator@208.52.161.93 5921'
-alias sshci2='ssh_tunnel administrator@208.52.182.38 5922'
+alias sshci1='ssh_tunnel administrator@208.52.187.248 5921'
+alias sshci2='ssh_tunnel administrator@208.52.187.249 5922'
