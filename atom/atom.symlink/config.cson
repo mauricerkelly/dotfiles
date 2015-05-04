@@ -36,7 +36,10 @@
   "file-types":
     $debug: true
     "^Podfile$": "source.ruby"
-  "autocomplete-plus": {}
+  "autocomplete-plus":
+    fileBlacklist: [
+      ".md"
+    ]
   "spell-check": {}
   minimap:
     plugins:
@@ -44,6 +47,9 @@
       selection: true
       "find-and-replace": true
       "highlight-selected": true
+  "atom-beautify":
+    _analyticsUserId: "67d3667b-2f2f-44fd-8841-caf8667ba968"
+  "markdown-writer": {}
 ".basic.html.text":
   editor:
     preferredLineLength: 110

@@ -16,7 +16,7 @@
 'SK SDK':
   'title': 'SK SDK'
   'paths': [
-    '/Users/mkelly/Development/SK/SKBackofficeSDK'
+    '/Users/mkelly/Development/SK/ipad-register/SKBackofficeSDK'
   ]
 'SK Register Wiki':
   'title': 'SK Register Wiki'
@@ -32,4 +32,9 @@
   'title': 'bwa-book'
   'paths': [
     '/Users/mkelly/Dropbox/Documents/Writing/Build WatchKit Apps'
+  ]
+'homebrew-cask':
+  'title': 'homebrew-cask'
+  'paths': [
+    '/Users/mkelly/Dropbox/Development/Git/homebrew-cask'
   ]
