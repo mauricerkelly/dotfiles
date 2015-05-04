@@ -36,6 +36,7 @@
 	tool = p4mergetool
 [alias]
     a = add
+    accept-theirs = "!f() { git checkout --theirs -- \"${@:-.}\"; git add -u \"${@:-.}\"; }; f"
     b = branch
     bd = branch -d
     bdf = branch -D
