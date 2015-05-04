@@ -3,7 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="personal"
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(atom git brew brew-cask osx rvm pod gitfast gem dirhistory bundler rails zsh_reload)
+plugins=(atom git brew brew-cask osx rvm pod gitfast gem dirhistory bundler rails zsh_reload tower)
 
 ZSH_CUSTOM=$DOTFILES/zsh/oh-my-zsh-custom
 source $ZSH/oh-my-zsh.sh
