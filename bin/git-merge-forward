@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+function die() {
+  echo
+  echo ">>>> $1"
+  exit 1
+}
+
+if [ $# != 2 ]; then
+  die "Incorrect number of arguments"
+fi
+
+upstream=$1
+upstream_comp=`echo $upstream | sed 's/\.//g'`
+downstream=$2
+downstream_comp=`echo $downstream | sed 's/\.//g'`
+date=`date +%Y%m%d`
+merge_branch="noticket-$upstream_comp-$downstream_comp-$date"
+
+echo "Performing forward merge from $upstream to $downstream"
+
+echo "Fetching..."
+git fetch || die "Failed to fetch"
+
+echo "Creating merge branch ($merge_branch)..."
+
+git checkout --no-track -b $merge_branch origin/rc_v$downstream || die "Failed to create merge branch"
+
+echo "Performing merge..."
+git merge origin/rc_v$upstream || die "Failed to merge"
