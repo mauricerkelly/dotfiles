@@ -52,6 +52,7 @@
     p = push origin HEAD
     pod = push origin --delete
     pp = pull --prune
+	pr = pull-request
     psu = "push --set-upstream"
 	r = remote
     s = status -sb
