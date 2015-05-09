@@ -50,25 +50,25 @@
   "atom-beautify":
     _analyticsUserId: "67d3667b-2f2f-44fd-8841-caf8667ba968"
   "markdown-writer": {}
+".erb.html.text":
+  editor:
+    tabLength: 2
 ".basic.html.text":
   editor:
     preferredLineLength: 110
     tabLength: 2
-".erb.html.text":
+".diff.source":
   editor:
-    tabLength: 2
-".coffee.source":
-  editor:
-    tabLength: 2
-".shell.source":
+    preferredLineLength: 110
+".litcoffee.source":
   editor:
     tabLength: 2
 ".ruby.source":
   editor:
     tabLength: 2
-".litcoffee.source":
+".shell.source":
   editor:
     tabLength: 2
-".diff.source":
+".coffee.source":
   editor:
-    preferredLineLength: 110
+    tabLength: 2
