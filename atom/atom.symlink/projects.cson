@@ -38,3 +38,8 @@
   'paths': [
     '/Users/mkelly/Dropbox/Development/Git/homebrew-cask'
   ]
+'Cask':
+  'title': 'Cask'
+  'paths': [
+    '/usr/local/Library/Taps/caskroom/homebrew-cask'
+  ]
