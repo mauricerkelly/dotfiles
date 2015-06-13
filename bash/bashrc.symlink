@@ -2,8 +2,8 @@
 export DOTFILES=$HOME/.dotfiles
 
 # load essential functions
-if [ -e $DOTFILES/bash/functions ]; then
-    for functions_file in `ls $DOTFILES/bash/functions/*.sh`;
+if [ -e $DOTFILES/functions ]; then
+    for functions_file in `ls $DOTFILES/functions/*.sh`;
         do source $functions_file;
     done
 fi
@@ -12,6 +12,9 @@ fi
 if [ -f $HOME/.localrc ]; then
   . $HOME/.localrc
 fi
+
+# source bash specific config files
+for config_file in `ls $DOTFILES/*/*.bash`; do source $config_file; done
 
 # source every .sh file in this rep
 for config_file in `ls $DOTFILES/*/*.sh`; do source $config_file; done

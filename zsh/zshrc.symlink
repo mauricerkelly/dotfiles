@@ -1,6 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="personal"
+#ZSH_THEME="personal"
+ZSH_THEME="agnoster"
 COMPLETION_WAITING_DOTS="true"
 
 plugins=(atom git brew brew-cask osx rvm pod gitfast gem dirhistory bundler rails zsh_reload tower)
@@ -8,6 +9,6 @@ plugins=(atom git brew brew-cask osx rvm pod gitfast gem dirhistory bundler rail
 ZSH_CUSTOM=$DOTFILES/zsh/oh-my-zsh-custom
 source $ZSH/oh-my-zsh.sh
 
-for alias_file in `ls $DOTFILES/*/aliases.sh`; do source $alias_file; done
+for alias_file in `ls -1 $DOTFILES/*/aliases.sh`; do source $alias_file; done
 
 export HISTCONTROL=ignoreboth:erasedups

@@ -2,11 +2,16 @@ export DOTFILES="$HOME/.dotfiles"
 
 # load essential functions
 if [[ -e $DOTFILES/functions ]]; then
-    for functions_file in `ls $DOTFILES/functions/*.sh`; do source $functions_file; done
+  for functions_file in `ls $DOTFILES/functions/*.sh`; do source $functions_file; done
 fi
 
 if [[ -e $DOTFILES/shell/path.sh ]]; then
-    source $DOTFILES/shell/path.sh
+  source $DOTFILES/shell/path.sh
 fi
 
 for function_file in `ls $DOTFILES/*/functions.sh`; do source $function_file; done
+
+# load zsh-only aliases
+if [[ -e $DOTFILES/zsh/aliases.zsh ]]; then
+  source $DOTFILES/zsh/aliases.zsh
+fi
