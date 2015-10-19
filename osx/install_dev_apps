@@ -12,7 +12,9 @@ install_cask coderunner
 install_cask hex-fiend
 install_cask hopper-disassembler
 install_cask hype
+install_cask ios-console
 install_cask iphone-configuration-utility
+install_cask kaleidoscope
 install_cask reveal
 install_cask sequel-pro
 install_cask simpholders
