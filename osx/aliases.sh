@@ -7,3 +7,4 @@ alias conv_tesco='iconv -c -f utf-8 -t ascii report.csv | tail -n +2 > stripped.
 alias dr='defaults read'
 alias dwr='defaults write'
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+alias xi='xcode-install'
