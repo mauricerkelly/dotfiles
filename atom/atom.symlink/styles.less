@@ -100,3 +100,18 @@
     background: @lighterCursorBackground !important;
   }
 }
+
+atom-text-editor::shadow {
+  .multi-wrap-guide:nth-child(1) .multi-wrap-guide-line {
+    background-color: fadeout(green, 60%);
+    width: 1px;
+  }
+  .multi-wrap-guide:nth-child(2) .multi-wrap-guide-line {
+    background-color: fadeout(orange, 60%);
+    width: 1px;
+  }
+  .multi-wrap-guide:nth-child(3) .multi-wrap-guide-line {
+    background-color: fadeout(red, 60%);
+    width: 2px;
+  }
+}

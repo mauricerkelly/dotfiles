@@ -16,6 +16,13 @@
     softWrapAtPreferredLineLength: true
     invisibles: {}
   core:
+    customFileTypes:
+      "source.ruby": [
+        "Podfile"
+      ]
+      source: [
+        "[object Object]"
+      ]
     ignoredNames: [
       ".git"
       ".svn"
@@ -28,14 +35,12 @@
     disabledPackages: [
       "go-plus"
       "spell-check"
+      "wrap-guide"
     ]
   rspec:
     command: "bundle exec rspec"
   "cucumber-runner":
     command: "bundle exec cucumber"
-  "file-types":
-    $debug: true
-    "^Podfile$": "source.ruby"
   "autocomplete-plus":
     fileBlacklist: [
       ".md"
@@ -44,12 +49,14 @@
   minimap:
     plugins:
       "git-diff": true
-      selection: true
+      selection: false
       "find-and-replace": true
       "highlight-selected": true
   "atom-beautify":
     _analyticsUserId: "67d3667b-2f2f-44fd-8841-caf8667ba968"
   "markdown-writer": {}
+  marked: {}
+  "imdone-atom": {}
 ".erb.html.text":
   editor:
     tabLength: 2
@@ -72,3 +79,12 @@
 ".coffee.source":
   editor:
     tabLength: 2
+".gfm.source":
+  "multi-wrap-guide":
+    columns: [
+      70
+      90
+      110
+    ]
+  editor:
+    preferredLineLength: 110
