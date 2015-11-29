@@ -9,4 +9,5 @@ if is_mac; then
   alias install_brew='ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
   alias install_brew_cask='install_cask caskroom/cask'
   alias update-airmail='brew cask cleanup; brew cask install airmail-beta --force'
+  alias update-ibank='brew cask cleanup; brew cask install ibank --force'
 fi
