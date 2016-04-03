@@ -1,45 +1,50 @@
-'Dotfiles':
-  'title': 'Dotfiles'
-  'paths': [
-    '/Users/mkelly/.dotfiles'
+Dotfiles:
+  title: "Dotfiles"
+  paths: [
+    "/Users/mkelly/.dotfiles"
   ]
-'MacNabb Waste':
-  'title': 'MacNabb Waste'
-  'paths': [
-    '/Users/mkelly/Dropbox/Sites/macnabbwaste.co.uk'
+"MacNabb Waste":
+  title: "MacNabb Waste"
+  paths: [
+    "/Users/mkelly/Dropbox/Sites/macnabbwaste.co.uk"
   ]
-'SK Register':
-  'title': 'SK Register'
-  'paths': [
-    '/Users/mkelly/Development/SK/ipad-register'
+"SK Register":
+  title: "SK Register"
+  paths: [
+    "/Users/mkelly/Development/SK/ipad-register"
   ]
-'SK SDK':
-  'title': 'SK SDK'
-  'paths': [
-    '/Users/mkelly/Development/SK/ipad-register/SKBackofficeSDK'
+"SK SDK":
+  title: "SK SDK"
+  paths: [
+    "/Users/mkelly/Development/SK/ipad-register/SKBackofficeSDK"
   ]
-'SK Register Wiki':
-  'title': 'SK Register Wiki'
-  'paths': [
-    '/Users/mkelly/Dropbox/Development/Git/ipad-register.wiki'
+"SK Register Wiki":
+  title: "SK Register Wiki"
+  paths: [
+    "/Users/mkelly/Dropbox/Development/Git/ipad-register.wiki"
   ]
-'SK Backoffice':
-  'title': 'SK Backoffice'
-  'paths': [
-    '/Users/mkelly/Development/SK/backoffice'
+"SK Backoffice":
+  title: "SK Backoffice"
+  paths: [
+    "/Users/mkelly/Development/SK/backoffice"
   ]
-'bwa-book':
-  'title': 'bwa-book'
-  'paths': [
-    '/Users/mkelly/Dropbox/Documents/Writing/Build WatchKit Apps'
+"bwa-book":
+  title: "bwa-book"
+  paths: [
+    "/Users/mkelly/Dropbox/Documents/Writing/Build WatchKit Apps"
   ]
-'homebrew-cask':
-  'title': 'homebrew-cask'
-  'paths': [
-    '/Users/mkelly/Dropbox/Development/Git/homebrew-cask'
+"homebrew-cask":
+  title: "homebrew-cask"
+  paths: [
+    "/Users/mkelly/Dropbox/Development/Git/homebrew-cask"
   ]
-'Cask':
-  'title': 'Cask'
-  'paths': [
-    '/usr/local/Library/Taps/caskroom/homebrew-cask'
+Cask:
+  title: "Cask"
+  paths: [
+    "/usr/local/Library/Taps/caskroom/homebrew-cask"
+  ]
+bwasite:
+  title: "BWA site"
+  paths: [
+    "/Users/mkelly/Dropbox/Sites/watchosapps.build"
   ]
