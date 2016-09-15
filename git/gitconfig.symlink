@@ -64,9 +64,9 @@
 [ghi]
 	token = 65f5b296308e37bf1b3a3ae1320d408c35edae1e
 [mergetool "p4mergetool"]
-	cmd = /Users/mkelly/Applications/p4merge.app/Contents/Resources/launchp4merge $PWD/$BASE $PWD/$REMOTE $PWD/$LOCAL $PWD/$MERGED
+	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $PWD/$BASE $PWD/$REMOTE $PWD/$LOCAL $PWD/$MERGED
 [difftool "p4mergetool"]
-	cmd = /Users/mkelly/Applications/p4merge.app/Contents/Resources/launchp4merge $LOCAL $REMOTE
+	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $LOCAL $REMOTE
 [push]
 	default = simple
 [filter "media"]
