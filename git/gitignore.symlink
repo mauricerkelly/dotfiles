@@ -29,6 +29,8 @@ xcuserdata/
 .*
 *.mode1v3
 *.pbxuser
+WorkspaceSettings.xcsettings
+*.xccheckout
 
 # Personal Notes Directory #
 ############################
@@ -40,3 +42,8 @@ opwv-server
 plugins/identity
 third-party/axis2/axis2-1.5.1/
 Log.java
+
+# Merge artifacts #
+###################
+*.orig
+
