@@ -58,6 +58,9 @@
     s = status -sb
     su = submodule update
 	pushitrealgood = push --force
+	wt = worktree
+	wta = worktree add
+	wtl = worktree list
 [ghi]
 	token = 65f5b296308e37bf1b3a3ae1320d408c35edae1e
 [mergetool "p4mergetool"]
