@@ -24,8 +24,19 @@ function hidecitests() {
   git update-index --assume-unchanged Register.xcodeproj/xcshareddata/xcschemes/CITests3.xcscheme
 }
 
+function copyDatabasesIntoPlace() {
+  destination_dir=$1
+  source_dir=${PWD}
+
+  cp -v "${source_dir}"/MineShaft.* "${destination_dir}/Documents/"
+  cp -v "${source_dir}"/SKBackgroundJob-BackOffice.* "${destination_dir}/Documents/"
+  cp -v "${source_dir}/Register.sqlite" "${destination_dir}/Library/Application Support/ShopKeep Register/"
+  cp -v "${source_dir}/com.shopkeep.register.plist" "${destination_dir}/Library/Preferences/"
+}
+
 if [[ $SHELL == "/usr/local/bin/bash" ]]; then
   export -f skdiff
   export -f showcitests
   export -f hidecitests
+  export -f copyDatabasesIntoPlace
 fi
