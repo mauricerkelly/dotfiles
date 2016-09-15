@@ -24,7 +24,7 @@ git fetch || die "Failed to fetch"
 
 echo "Creating merge branch ($merge_branch)..."
 
-git checkout --no-track -b $merge_branch origin/rc_v$downstream || die "Failed to create merge branch"
+git checkout --no-track -b $merge_branch origin/$downstream || die "Failed to create merge branch"
 
 echo "Performing merge..."
-git merge origin/rc_v$upstream || die "Failed to merge"
+git merge origin/$upstream || die "Failed to merge"
