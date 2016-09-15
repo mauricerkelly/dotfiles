@@ -1,90 +1,111 @@
 "*":
-  "exception-reporting":
-    userId: "5392f155-a911-a1c0-cdd2-604cd7bf4ef0"
-  "release-notes":
-    viewedVersion: "0.95.0"
-  welcome:
-    showOnStartup: false
-  metrics:
-    userId: "d96913c83b39b64e17220206b7c618adf83dbb33"
-  editor:
-    fontSize: 12
-    showIndentGuide: true
-    preferredLineLength: 110
-    tabLength: 4
-    softWrap: true
-    softWrapAtPreferredLineLength: true
-    invisibles: {}
+  "atom-beautify":
+    general:
+      _analyticsUserId: "67d3667b-2f2f-44fd-8841-caf8667ba968"
+  "autocomplete-plus":
+    fileBlacklist: [
+      ".md"
+    ]
   core:
     customFileTypes:
-      "source.ruby": [
-        "Podfile"
-      ]
       source: [
         "[object Object]"
       ]
+      "source.ruby": [
+        "Podfile"
+      ]
+    disabledPackages: [
+      "go-plus"
+      "spell-check"
+      "wrap-guide"
+      "language-gfm"
+      "language-gfm"
+      "language-gfm"
+      "language-gfm"
+      "language-gfm"
+      "language-gfm"
+      "language-gfm"
+      "language-gfm"
+      "language-gfm"
+      "language-gfm"
+      "language-gfm"
+      "language-gfm"
+      "language-gfm"
+      "language-gfm"
+    ]
     ignoredNames: [
       ".git"
       ".svn"
       ".DS_Store"
     ]
     themes: [
-      "atom-light-ui"
-      "tomorrow"
+      "dracula-ui"
+      "dracula-theme"
     ]
-    disabledPackages: [
-      "go-plus"
-      "spell-check"
-      "wrap-guide"
-    ]
-  rspec:
-    command: "bundle exec rspec"
   "cucumber-runner":
     command: "bundle exec cucumber"
-  "autocomplete-plus":
-    fileBlacklist: [
-      ".md"
-    ]
-  "spell-check": {}
-  minimap:
-    plugins:
-      "git-diff": true
-      selection: false
-      "find-and-replace": true
-      "highlight-selected": true
-  "atom-beautify":
-    _analyticsUserId: "67d3667b-2f2f-44fd-8841-caf8667ba968"
+  editor:
+    fontSize: 12
+    invisibles: {}
+    preferredLineLength: 110
+    showIndentGuide: true
+    softWrap: true
+    tabLength: 4
+  "exception-reporting":
+    userId: "5392f155-a911-a1c0-cdd2-604cd7bf4ef0"
+  "imdone-atom": {}
   "markdown-writer": {}
   marked: {}
-  "imdone-atom": {}
-".erb.html.text":
-  editor:
-    tabLength: 2
+  metrics:
+    userId: "d96913c83b39b64e17220206b7c618adf83dbb33"
+  minimap:
+    plugins:
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+      selection: false
+      selectionDecorationsZIndex: 0
+  "release-notes":
+    viewedVersion: "0.95.0"
+  rspec:
+    command: "bundle exec rspec"
+  "spell-check": {}
+  welcome:
+    showOnStartup: false
 ".basic.html.text":
   editor:
     preferredLineLength: 110
     tabLength: 2
-".diff.source":
-  editor:
-    preferredLineLength: 110
-".litcoffee.source":
-  editor:
-    tabLength: 2
-".ruby.source":
-  editor:
-    tabLength: 2
-".shell.source":
-  editor:
-    tabLength: 2
 ".coffee.source":
   editor:
     tabLength: 2
+".diff.source":
+  editor:
+    preferredLineLength: 110
+".erb.html.text":
+  editor:
+    tabLength: 2
 ".gfm.source":
+  editor:
+    preferredLineLength: 110
   "multi-wrap-guide":
     columns: [
       70
       90
       110
     ]
+".litcoffee.source":
+  editor:
+    tabLength: 2
+".md.text":
   editor:
     preferredLineLength: 110
+".ruby.source":
+  editor:
+    tabLength: 2
+".shell.source":
+  editor:
+    tabLength: 2
