@@ -1,3 +1,6 @@
 [submodule "development/Library.Preferences.appCode20.deeplink"]
 	path = development/Library.Preferences.appCode20.deeplink
 	url = git@github.com:mauricerkelly/appCode20.git
+[submodule "vim/vim.symlink/bundle/vim-elixir"]
+	path = vim/vim.symlink/bundle/vim-elixir
+	url = https://github.com/elixir-lang/vim-elixir
