@@ -23,3 +23,5 @@ for config_file in `ls $DOTFILES/*/*.sh`; do source $config_file; done
 for config_file in `ls $DOTFILES/*/completions`; do source $config_file; done
 
 export HISTCONTROL=ignoreboth:erasedups
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

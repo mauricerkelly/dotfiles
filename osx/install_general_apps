@@ -14,7 +14,6 @@ install_cask netspot
 install_cask nvalt
 install_cask omnifocus
 install_cask omnioutliner
-install_cask rdio
 install_cask slack
 install_cask sonos
 install_cask spotify
