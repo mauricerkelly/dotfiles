@@ -1,17 +1,35 @@
-execute pathogen#infect()
+set nocp
 
-set autoindent
-set tabstop=4
-set shiftwidth=4
-set expandtab
-set backspace=start
-set ruler
-set showcmd
-set wrapmargin=2
-set cinoptions=:0,p0,t0
-set cinwords=if,else,while,do,for,switch,case
-set formatoptions=tcqr
-set cindent
+
+execute pathogen#infect()
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim/
+
+colorscheme base16-default-dark
+
+syntax on
+set laststatus=2
+
+let &t_Co=256
+
+" set cursorline
 set incsearch
 set hlsearch
-set nobackup
+let mapleader=","
+nnoremap <leader><space> :nohlsearch<CR>
+
+
+" my old stuff
+" set autoindent
+" set tabstop=4
+" set shiftwidth=4
+" set expandtab
+" set backspace=start
+" set ruler
+" set showcmd
+" set wrapmargin=2
+" set cinoptions=:0,p0,t0
+" set cinwords=if,else,while,do,for,switch,case
+" set formatoptions=tcqr
+" set cindent
+
+" set nobackup
