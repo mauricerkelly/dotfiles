@@ -1,9 +1,0 @@
-atom-mac-theme
-atom-prettify
-atom-runner
-cucumber-runner
-language-rspec
-rails-rspec
-rspec
-tomorrow
-tomorrow-syntax
