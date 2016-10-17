@@ -4,19 +4,31 @@ set nocp
 execute pathogen#infect()
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim/
 
-colorscheme base16-default-dark
+colorscheme base16-tomorrow-night
 
 syntax on
 set laststatus=2
 
 let &t_Co=256
 
-" set cursorline
+set cursorline
 set incsearch
 set hlsearch
 let mapleader=","
 nnoremap <leader><space> :nohlsearch<CR>
 
+nnoremap <leader>t :!mix test<CR>
+
+set relativenumber
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set number
+  else
+    set relativenumber
+  endif
+endfunc
+
+nnoremap <C-n> :call NumberToggle()<cr>
 
 " my old stuff
 " set autoindent
