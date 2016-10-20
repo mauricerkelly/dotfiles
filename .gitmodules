@@ -10,3 +10,12 @@
 [submodule "vim/vim.symlink/bundle/powerline"]
 	path = vim/vim.symlink/bundle/powerline
 	url = https://github.com/powerline/powerline
+[submodule "vim/vim.symlink/bundle/vim-swift"]
+	path = vim/vim.symlink/bundle/vim-swift
+	url = git://github.com/toyamarinyon/vim-swift.git
+[submodule "vim/vim.symlink/bundle/ctrlp.vim"]
+	path = vim/vim.symlink/bundle/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim
+[submodule "vim/vim.symlink/bundle/vim-gitgutter"]
+	path = vim/vim.symlink/bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter

@@ -11,15 +11,21 @@ set laststatus=2
 
 let &t_Co=256
 
-set cursorline
+" set cursorline
 set incsearch
 set hlsearch
+
+set autoindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
 let mapleader=","
 nnoremap <leader><space> :nohlsearch<CR>
 
 nnoremap <leader>t :!mix test<CR>
 
-set relativenumber
+" set relativenumber
 function! NumberToggle()
   if(&relativenumber == 1)
     set number
@@ -31,10 +37,7 @@ endfunc
 nnoremap <C-n> :call NumberToggle()<cr>
 
 " my old stuff
-" set autoindent
-" set tabstop=4
-" set shiftwidth=4
-" set expandtab
+
 " set backspace=start
 " set ruler
 " set showcmd
