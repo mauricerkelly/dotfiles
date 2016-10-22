@@ -30,6 +30,8 @@ let s:gui0D = "81a2be"
 let s:gui0E = "b294bb"
 let s:gui0F = "a3685a"
 
+let s:guiM2 = "d78700"
+
 " Terminal color definitions
 let s:cterm00 = "00"
 let s:cterm03 = "08"
@@ -50,6 +52,7 @@ if exists('base16colorspace') && base16colorspace == "256"
   let s:cterm0F = "17"
   let s:ctermM0 = "235"
   let s:ctermM1 = "131"
+  let s:ctermM2 = "215"
 else
   let s:cterm01 = "10"
   let s:cterm02 = "11"
@@ -247,6 +250,9 @@ call <sid>hi("rubyInterpolationDelimiter",  s:gui0F, "", s:ctermM1, "", "", "")
 call <sid>hi("rubyRegexp",                  s:gui0C, "", s:cterm0C, "", "", "")
 call <sid>hi("rubySymbol",                  s:gui0B, "", s:cterm0B, "", "", "")
 call <sid>hi("rubyStringDelimiter",         s:gui0B, "", s:cterm0B, "", "", "")
+call <sid>hi("rubyBoolean",                 s:guiM2, "", s:ctermM2, "", "", "")
+highlight link rubyControl rubyConditional
+highlight link rubyInteger rubyBoolean
 
 " SASS highlighting
 call <sid>hi("sassidChar",     s:gui08, "", s:cterm08, "", "", "")
