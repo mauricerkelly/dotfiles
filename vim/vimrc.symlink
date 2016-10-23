@@ -26,6 +26,7 @@ let mapleader=","
 nnoremap <leader><space> :nohlsearch<CR>
 
 nnoremap <leader>t :!mix test<CR>
+nnoremap <leader>e :echo synIDattr(synID(line("."), col("."), 1), "name")<CR>
 
 set number
 set relativenumber

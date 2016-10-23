@@ -52,7 +52,7 @@ if exists('base16colorspace') && base16colorspace == "256"
   let s:cterm0F = "17"
   let s:ctermM0 = "235"
   let s:ctermM1 = "131"
-  let s:ctermM2 = "215"
+  let s:ctermM2 = "215" " Orange
 else
   let s:cterm01 = "10"
   let s:cterm02 = "11"
@@ -148,7 +148,7 @@ call <sid>hi("Identifier",   s:gui08, "", s:cterm08, "", "none", "")
 call <sid>hi("Include",      s:gui0D, "", s:cterm0D, "", "", "")
 call <sid>hi("Keyword",      s:gui0E, "", s:cterm0E, "", "", "")
 call <sid>hi("Label",        s:gui0A, "", s:cterm0A, "", "", "")
-call <sid>hi("Number",       s:gui09, "", s:cterm09, "", "", "")
+call <sid>hi("Number",       s:gui09, "", s:ctermM2, "", "", "")
 call <sid>hi("Operator",     s:gui05, "", s:cterm05, "", "none", "")
 call <sid>hi("PreProc",      s:gui0A, "", s:cterm0A, "", "", "")
 call <sid>hi("Repeat",       s:gui0A, "", s:cterm0A, "", "", "")
@@ -253,6 +253,11 @@ call <sid>hi("rubyStringDelimiter",         s:gui0B, "", s:cterm0B, "", "", "")
 call <sid>hi("rubyBoolean",                 s:guiM2, "", s:ctermM2, "", "", "")
 highlight link rubyControl rubyConditional
 highlight link rubyInteger rubyBoolean
+
+" Elixir highlighting
+highlight link elixirStringDelimiter elixirString
+highlight link elixirAtom elixirString
+highlight link elixirAlias Statement
 
 " SASS highlighting
 call <sid>hi("sassidChar",     s:gui08, "", s:cterm08, "", "", "")
