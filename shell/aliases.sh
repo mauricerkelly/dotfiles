@@ -1,4 +1,3 @@
-alias ag='alias | grep'
 alias cdbl='cd $HOME/Dropbox/Sites/chatswood.org.uk/blog'
 alias cddf='cd $HOME/.dotfiles'
 alias cddr='cd $HOME/Dropbox'
