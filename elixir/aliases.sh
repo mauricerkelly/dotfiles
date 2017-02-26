@@ -1,3 +1,4 @@
+alias install_kiex='\curl -sSL https://raw.githubusercontent.com/taylor/kiex/master/install | bash -s'
 alias ism='iex -S mix'
 alias meb='mix escript.build'
 
