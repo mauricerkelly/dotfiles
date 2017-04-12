@@ -47,3 +47,6 @@ Log.java
 ###################
 *.orig
 
+# Personal #
+############
+scratchpad.md
