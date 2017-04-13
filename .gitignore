@@ -3,3 +3,6 @@ dotfiles.bbprojectd
 ssh/ssh.symlink/deploy
 ruby/bundle.symlink/cache
 atom/atom.symlink/blob-store
+
+# Anomali-specific ignores:
+ssh/ssh.symlink/authorized_keys.jcorig
