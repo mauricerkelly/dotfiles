@@ -28,3 +28,6 @@
 [submodule "vim/vim.symlink/bundle/vim-wakatime"]
 	path = vim/vim.symlink/bundle/vim-wakatime
 	url = git://github.com/wakatime/vim-wakatime.git
+[submodule "vim/vim.symlink/bundle/vim-wordmotion"]
+	path = vim/vim.symlink/bundle/vim-wordmotion
+	url = https://github.com/chaoren/vim-wordmotion
