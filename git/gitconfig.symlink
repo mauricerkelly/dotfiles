@@ -1,6 +1,7 @@
 [user]
 	name = Maurice Kelly
 	email = osv-github@chatswood.org.uk
+	signingkey = 9F6D40FCD81C0568
 [github]
 	user = mauricerkelly
 [color]
