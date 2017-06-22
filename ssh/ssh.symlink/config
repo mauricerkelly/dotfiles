@@ -16,3 +16,24 @@ Host work
     Host bfs-x4150-12-xm2.bfs.openwave.com
 
 Host moginie moginie.home
+
+Host infra1
+    HostName consul-infra1.threatstream.com
+    User mkelly
+    IdentitiesOnly yes
+    StrictHostKeyChecking no
+    UserKnownHostsFile=/dev/null
+
+Host *.infra1
+    ProxyCommand ssh -aY infra1 'nc -w 900 %h %p'
+    ForwardAgent yes
+    IdentitiesOnly yes
+    User mkelly
+    GSSAPIAuthentication no
+    VerifyHostKeyDNS no
+    HashKnownHosts no
+    TCPKeepAlive yes
+    ServerAliveInterval 300
+    StrictHostKeyChecking no
+    UserKnownHostsFile=/dev/null
+    IdentitiesOnly yes
