@@ -32,6 +32,15 @@ nnoremap <leader>e :echo synIDattr(synID(line("."), col("."), 1), "name")<CR>
 set number
 set relativenumber
 
+filetype plugin on
+
+" flake8 options
+autocmd BufWritePost *.py call Flake8()
+
+autocmd vimenter * NERDTree
+
+au FileType python setlocal formatprg=autopep8\ -
+
 " my old stuff
 
 " set backspace=start
