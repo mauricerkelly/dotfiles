@@ -16,6 +16,7 @@ let &t_Co=256
 set cursorline
 set incsearch
 set hlsearch
+set colorcolumn=80,100
 
 set autoindent
 set tabstop=4
@@ -37,9 +38,9 @@ filetype plugin on
 " flake8 options
 autocmd BufWritePost *.py call Flake8()
 
-autocmd vimenter * NERDTree
-
 au FileType python setlocal formatprg=autopep8\ -
+
+let NERDTreeIgnore = ['\.pyc$']
 
 " my old stuff
 
