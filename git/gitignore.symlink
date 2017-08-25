@@ -47,6 +47,14 @@ Log.java
 ###################
 *.orig
 
+# Python #
+##########
+*.egg-info/
+
+# STAXX #
+#########
+etc/xlink.default.conf
+
 # Personal #
 ############
 scratchpad.md
