@@ -22,6 +22,7 @@ set autoindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set backspace=indent,eol,start
 
 let mapleader=","
 nnoremap <leader><space> :nohlsearch<CR>
@@ -41,6 +42,10 @@ autocmd BufWritePost *.py call Flake8()
 au FileType python setlocal formatprg=autopep8\ -
 
 let NERDTreeIgnore = ['\.pyc$']
+
+
+set wildignore+=*venv*,*.pyc,*node_module*
+let g:ctrlp_custom_ignore = '\v[\/]\.(hg|svn|so|swp|zip|pyc)$'
 
 " my old stuff
 
