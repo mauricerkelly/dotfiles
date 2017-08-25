@@ -46,3 +46,6 @@
 [submodule "vim/vim.symlink/bundle/vim-windowswap"]
 	path = vim/vim.symlink/bundle/vim-windowswap
 	url = git@github.com:wesQ3/vim-windowswap.git
+[submodule "vim/vim.symlink/bundle/vim-easymotion"]
+	path = vim/vim.symlink/bundle/vim-easymotion
+	url = git@github.com:easymotion/vim-easymotion.git
