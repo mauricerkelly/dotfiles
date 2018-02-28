@@ -11,8 +11,11 @@ source $ZSH/oh-my-zsh.sh
 
 for alias_file in `ls -1 $DOTFILES/*/aliases.sh`; do source $alias_file; done
 
+for setup_file in `ls -1 $DOTFILES/*/auto_setup.sh`; do source $setup_file; done
+
 export HISTCONTROL=ignoreboth:erasedups
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 export EDITOR=vim
+export PYTHONSTARTUP=${HOME}/.pythonrc
