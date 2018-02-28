@@ -31,6 +31,15 @@ nnoremap <leader>t :!mix test<CR>
 nnoremap <leader>b :!mix escript.build<CR>
 nnoremap <leader>e :echo synIDattr(synID(line("."), col("."), 1), "name")<CR>
 
+
+" Buffers
+nnoremap <silent> [b :bprevious<CR>
+nnoremap <silent> ]b :bnext<CR>
+nnoremap <silent> [B :bfirst<CR>
+nnoremap <silent> ]B :blast<CR>
+
+
+" Line numbers and guttery stuff
 set number
 set relativenumber
 
@@ -38,12 +47,9 @@ filetype plugin on
 
 " flake8 options
 autocmd BufWritePost *.py call Flake8()
-
 au FileType python setlocal formatprg=autopep8\ -
 
 let NERDTreeIgnore = ['\.pyc$']
-
-
 set wildignore+=*venv*,*.pyc,*node_module*
 let g:ctrlp_custom_ignore = '\v[\/]\.(hg|svn|so|swp|zip|pyc)$'
 
