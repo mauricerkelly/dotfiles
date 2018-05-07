@@ -1,7 +1,25 @@
 set nocp
 
+packadd minpac
+call minpac#init()
 
-execute pathogen#infect()
+call minpac#add('k-takata/minpac', {'type': 'opt'})
+call minpac#add('elmcast/elm-vim')
+call minpac#add('kien/ctrlp.vim')
+call minpac#add('elixir-lang/vim-elixir')
+call minpac#add('nvie/vim-flake8')
+call minpac#add('airblade/vim-gitgutter')
+call minpac#add('toyamarinyon/vim-swift')
+call minpac#add('chaoren/vim-wordmotion')
+call minpac#add('powerline/powerline')
+call minpac#add('wakatime/vim-wakatime')
+call minpac#add('easymotion/vim-easymotion')
+call minpac#add('scrooloose/nerdtree')
+call minpac#add('scrooloose/nerdcommenter')
+call minpac#add('Xuyuanp/nerdtree-git-plugin')
+
+
+" execute pathogen#infect()
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim/
 
 let g:gitgutter_override_sign_column_highlight = 0
