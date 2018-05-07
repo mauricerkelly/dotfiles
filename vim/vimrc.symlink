@@ -19,7 +19,6 @@ call minpac#add('scrooloose/nerdcommenter')
 call minpac#add('Xuyuanp/nerdtree-git-plugin')
 
 
-" execute pathogen#infect()
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim/
 
 let g:gitgutter_override_sign_column_highlight = 0
@@ -51,6 +50,7 @@ nnoremap <leader>e :echo synIDattr(synID(line("."), col("."), 1), "name")<CR>
 
 
 " Buffers
+nnoremap [[ :buffers<CR>
 nnoremap <silent> [b :bprevious<CR>
 nnoremap <silent> ]b :bnext<CR>
 nnoremap <silent> [B :bfirst<CR>
