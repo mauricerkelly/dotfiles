@@ -71,6 +71,9 @@ let NERDTreeIgnore = ['\.pyc$']
 set wildignore+=*venv*,*.pyc,*node_module*
 let g:ctrlp_custom_ignore = '\v[\/]\.(hg|svn|so|swp|zip|pyc)$'
 
+command! PackUpdate call minpac#update()
+command! PackClean call minpac#clean()
+
 " my old stuff
 
 " set backspace=start
