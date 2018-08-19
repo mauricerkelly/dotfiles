@@ -1,5 +1,7 @@
 alias g='hub'
-alias git='hub'
+if is_mac; then
+  alias git='hub'
+fi
 alias ga='git add'
 alias gf='git fetch'
 alias gsh='gitsh'
