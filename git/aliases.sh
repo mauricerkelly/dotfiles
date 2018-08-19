@@ -1,5 +1,5 @@
-alias g='hub'
 if is_mac; then
+  alias g='hub'
   alias git='hub'
 fi
 alias ga='git add'
@@ -18,6 +18,6 @@ alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 if [[ -n $ZSH_VERSION ]]; then
   if is_mac; then
     compdef hub='git'
+    compdef g='git'
   fi
-  compdef g='git'
 fi
