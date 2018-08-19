@@ -14,6 +14,8 @@ alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 
 if [[ -n $ZSH_VERSION ]]; then
-  compdef hub='git'
+  if is_mac; then
+    compdef hub='git'
+  fi
   compdef g='git'
 fi
