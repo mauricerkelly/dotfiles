@@ -1,5 +1,7 @@
-alias g='hub'
-alias git='hub'
+if is_mac; then
+  alias g='hub'
+  alias git='hub'
+fi
 alias ga='git add'
 alias gf='git fetch'
 alias gsh='gitsh'
@@ -14,6 +16,8 @@ alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 
 if [[ -n $ZSH_VERSION ]]; then
-  compdef hub='git'
-  compdef g='git'
+  if is_mac; then
+    compdef hub='git'
+    compdef g='git'
+  fi
 fi

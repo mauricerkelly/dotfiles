@@ -10,6 +10,8 @@ alias hgr='history | grep'
 alias iperfc='iperf -i 1 -c'
 alias iperfs='iperf -s'
 alias l='/bin/ls -G'
-alias ls='exa'
+if is_mac; then
+  alias ls='exa'
+fi
 alias psg='ps -ef | grep'
 alias vi='vim'
