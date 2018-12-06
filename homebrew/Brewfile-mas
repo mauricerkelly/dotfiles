@@ -2,8 +2,8 @@ tap 'homebrew/bundle'
 tap 'argon/mas'
 mas 'Server', id: 883878097
 mas 'Mactracker', id: 430255202
-mas 'GarageBand', id: 682658836
-mas 'TunesBar+', id: 702817673
+#mas 'GarageBand', id: 682658836
+#mas 'TunesBar+', id: 702817673
 mas 'Blackmagic Disk Speed Test', id: 425264550
 mas 'Alternote', id: 974971992
 mas 'Pixelmator', id: 407963104
@@ -29,7 +29,7 @@ mas 'OmniGraffle', id: 711830901
 mas 'ReadKit', id: 588726889
 mas 'Yoink', id: 457622435
 mas 'DaisyDisk', id: 411643860
-mas 'iMovie', id: 408981434
+#mas 'iMovie', id: 408981434
 mas 'Numbers', id: 409203825
 mas 'Keynote', id: 409183694
 mas 'Screens', id: 446107677
