@@ -1,4 +1,5 @@
 alias cdbl='cd $HOME/Dropbox/Sites/chatswood.org.uk/blog'
+alias cdd='cd $HOME/Downloads'
 alias cddf='cd $HOME/.dotfiles'
 alias cddr='cd $HOME/Dropbox'
 alias gcom='git checkout master'
