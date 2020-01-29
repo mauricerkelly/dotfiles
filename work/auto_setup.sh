@@ -40,6 +40,16 @@ function setup_optic_link_dev_dir() {
 
         tab-color 239 255 86
     fi
+
+    if [[ ${PWD} =~ '/Users/mkelly/Development/anomali/integrator' ]]; then
+        if [[ ${PWD} == '/Users/mkelly/Development/anomali/integrator' ]]; then
+            source venv/bin/activate
+            export XLINK_HOME=${PWD}
+            export OPTIC_LINK_HOME=${PWD}
+        fi
+
+        tab-color 239 255 86
+    fi
 }
 
 chpwd_functions=(${chpwd_functions[@]} "setup_anomali_link_dev_dir" "setup_siem_link_dev_dir" "setup_optic_link_dev_dir")
