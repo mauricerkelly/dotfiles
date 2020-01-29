@@ -1,6 +1,6 @@
 # mauricerkelly does dotfiles
 
-This personal home directory configuration system is based off [holman's dotfiles](https://github.com/holman/dotfiles). It has been slimmed down to suit my own needs, tweaked, and "ported" to bash, because I couldn't be bothered with `zsh`.
+This personal home directory configuration system is based off [holman's dotfiles](https://github.com/holman/dotfiles). It has been slimmed down to suit my own needs, tweaked, and "ported" to `bash`, because I couldn't be bothered with `zsh`. It has subsequently been "ported" back to `zsh` because I was bored with `bash`.
 
 ## install
 
@@ -8,6 +8,7 @@ This personal home directory configuration system is based off [holman's dotfile
 - `cd ~/.dotfiles`
 - `vi bash/bashrc.symlink` (tweak this up if necessary)
 - `rake install` (you'll need the Ruby tool `rake` for this)
+- `git submodule update --init --recursive` (pulls in some submodules)
 
 The install rake task will symlink the appropriate files in `.dotfiles` to your
 home directory. Everything is configured and tweaked within `~/.dotfiles`,
