@@ -6,7 +6,7 @@
 	url = https://github.com/robbyrussell/oh-my-zsh.git
 [submodule "zsh/oh-my-zsh-custom/plugins/elixir"]
 	path = zsh/oh-my-zsh-custom/plugins/elixir
-	url = https://github.com:gusaiani/elixir-oh-my-zsh.git
+	url = https://github.com/gusaiani/elixir-oh-my-zsh.git
 [submodule "vim/vim.symlink/pack/minpac/opt/minpac"]
 	path = vim/vim.symlink/pack/minpac/opt/minpac
 	url = https://github.com/k-takata/minpac.git
