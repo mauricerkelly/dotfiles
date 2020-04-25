@@ -9,3 +9,6 @@ ssh/ssh.symlink/authorized_keys
 # Anomali-specific ignores:
 ssh/ssh.symlink/authorized_keys.jcorig
 ssh/ssh.symlink/authorized_keys
+
+# Brew ignores
+homebrew/Brewfile-*.lock.json
