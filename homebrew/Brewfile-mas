@@ -14,10 +14,8 @@ mas 'ScreenFloat', id: 414528154
 mas 'PCalc', id: 403504866
 mas 'Deliveries', id: 924726344
 mas 'Cocoa JSON Editor', id: 442160773
-mas 'Revisions', id: 819348619
 mas 'EyeFriendly', id: 587769990
 mas 'Icon Slate', id: 439697913
-mas 'Pocket', id: 568494494
 mas 'Moom', id: 419330170
 mas 'CocoaColor', id: 412797403
 mas 'zPerf', id: 483498361
@@ -26,10 +24,8 @@ mas 'Pages', id: 409201541
 mas 'Fantastical 2', id: 975937182
 mas 'Yoink', id: 457622435
 mas 'DaisyDisk', id: 411643860
-#mas 'iMovie', id: 408981434
 mas 'Numbers', id: 409203825
 mas 'Keynote', id: 409183694
-mas 'Screens', id: 446107677
 mas 'OmniPlan', id: 1040002810
 mas 'NordVPN IKE - Unlimited VPN', id: 1116599239
 mas 'Differences', id: 1289067356
