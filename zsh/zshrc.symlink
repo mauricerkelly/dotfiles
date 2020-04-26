@@ -19,3 +19,5 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 export EDITOR=vim
 export PYTHONSTARTUP=${HOME}/.pythonrc
+
+export BAT_THEME="Monokai Extended Bright"
