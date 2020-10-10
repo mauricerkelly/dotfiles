@@ -19,11 +19,3 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 export EDITOR=vim
 export PYTHONSTARTUP=${HOME}/.pythonrc
-
-echo -e "\n. $(brew --prefix asdf)/asdf.sh" >> ~/.zshrc
-
-. /usr/local/opt/asdf/asdf.sh
-
-. /usr/local/opt/asdf/asdf.sh
-
-. /usr/local/opt/asdf/asdf.sh
