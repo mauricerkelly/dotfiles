@@ -1,4 +1,4 @@
 tap 'homebrew/bundle'
-tap 'caskroom/cask'
-tap 'caskroom/versions'
+tap 'argon/mas'
 cask 'ableton-live-suite'
+mas 'Logic Pro X', id: 634148309

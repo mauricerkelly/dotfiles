@@ -1,9 +1,1 @@
-# Keys added to this file will be automatically
-# copied to your authorized_keys file by the JumpCloud agent.
 ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAtu6wZ7UfXBLw6QBy4cPqIMUI4Pyv1DW9Eu8/d+RG0as2XEitsFCmHSeOoLE4h+gQftFv3OjhV7wtJKGcEjihL18XORx9EZh/FvssCeMKKMgm+NXcT1v1FppQ6/tJZpIyD63GbNW9Mv9B9l6ID2NS7GK2x3435m222gve7k63YMQluiCvEDxg6XW7aY4r4VrEH+xviu+gz3H3HbO2RPNaF17THn1bxuJjXWi4dPU8Me7gpD1kmMBXyS5TIykzvwzhp7zwvNVPO4FKywgnIWesNLCtErsS1U40lRtzP7iwaQGY9+7bQzKIr4eR+gZcOykndZBGFcYaJzs0WwrVoA9OfQ== mkelly@gifford.home
-
-
-# Constructed by the JumpCloud agent, you can add keys manually in /Users/mkelly/.ssh/authorized_keys.jcorig
-
-
-# Constructed by the JumpCloud agent, you can add keys manually in /Users/mkelly/.ssh/authorized_keys.jcorig

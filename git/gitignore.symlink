@@ -56,3 +56,4 @@ etc/xlink.default.conf
 # Personal #
 ############
 scratchpad.md
+motools/*

@@ -1,18 +1,15 @@
-[submodule "development/Library.Preferences.appCode20.deeplink"]
-	path = development/Library.Preferences.appCode20.deeplink
-	url = git@github.com:mauricerkelly/appCode20.git
 [submodule "vim/vim.symlink/bundle/powerline"]
 	path = vim/vim.symlink/bundle/powerline
-	url = git@github.com:powerline/powerline.git
+	url = https://github.com/powerline/powerline.git
 [submodule "zsh/oh-my-zsh.symlink"]
 	path = zsh/oh-my-zsh.symlink
 	url = https://github.com/robbyrussell/oh-my-zsh.git
 [submodule "zsh/oh-my-zsh-custom/plugins/elixir"]
 	path = zsh/oh-my-zsh-custom/plugins/elixir
-	url = git@github.com:gusaiani/elixir-oh-my-zsh.git
+	url = https://github.com/gusaiani/elixir-oh-my-zsh.git
 [submodule "vim/vim.symlink/pack/minpac/opt/minpac"]
 	path = vim/vim.symlink/pack/minpac/opt/minpac
-	url = git@github.com:k-takata/minpac.git
+	url = https://github.com/k-takata/minpac.git
 [submodule "vim/vim.symlink/bundle/base16-vim"]
 	path = vim/vim.symlink/bundle/base16-vim
-	url = git@github.com:chriskempson/base16-vim.git
+	url = https://github.com/chriskempson/base16-vim.git
