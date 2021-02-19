@@ -37,3 +37,9 @@ Host *.infra1
     StrictHostKeyChecking no
     UserKnownHostsFile=/dev/null
     IdentitiesOnly yes
+
+Host gitlab.novastone.net
+    User git
+    Hostname gitlab.novastone.net
+    IdentityFile ~/.keys/id_novastone_gitlab
+    IdentitiesOnly yes
