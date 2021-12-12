@@ -1,94 +1,89 @@
+tap "argon/mas"
+tap "federico-terzi/espanso"
 tap "homebrew/bundle"
 tap "homebrew/cask"
-tap "homebrew/cask-drivers"
-tap "homebrew/cask-versions"
+tap "homebrew/cask-fonts"
 tap "homebrew/core"
-tap "homebrew/services"
-tap "homebrew/versions"
-tap "kylef/formulae"
-brew "autoconf"
-brew "automake"
-brew "cloog"
-brew "cmake"
-brew "coreutils"
+brew "asdf"
 brew "erlang"
 brew "elixir"
-brew "elm"
 brew "exa"
-brew "lame"
-brew "x264"
-brew "xvid"
-brew "ffmpeg"
-brew "gcc@4.9"
-brew "gdbm"
 brew "git"
-brew "git-flow"
-brew "gmp@4"
-brew "libksba"
-brew "gnupg"
 brew "hub"
-brew "libtool"
-brew "imagemagick"
-brew "isl@0.11"
-brew "isl@0.12"
-brew "libmpc@0.8"
-brew "libyaml"
 brew "mas"
-brew "mysql"
-brew "node"
-brew "openssl@1.1"
-brew "pcre"
-brew "perl"
-brew "pkg-config"
-brew "readline"
-brew "postgresql", restart_service: true
-brew "sqlite"
-brew "python"
-brew "ruby", link: true
-brew "tree"
-brew "unixodbc"
+brew "openssl@3"
 brew "vim"
 brew "wget"
-brew "xctool"
 brew "zsh"
-brew "kylef/formulae/swiftenv"
-mas "Airmail 3", id: 918858936
-mas "Alternote", id: 974971992
-mas "Angry Birds", id: 403961173
+brew "federico-terzi/espanso/espanso"
+cask "1password"
+cask "banktivity"
+cask "bartender"
+cask "brave-browser"
+cask "charles"
+cask "coderunner"
+cask "dash"
+cask "docker"
+cask "doxie"
+cask "dropbox"
+cask "evernote"
+cask "fluid"
+cask "font-meslo-for-powerline"
+cask "font-meslo-lg-nerd-font"
+cask "hex-fiend"
+cask "istat-menus"
+cask "iterm2"
+cask "kaleidoscope"
+cask "launchbar"
+cask "little-snitch"
+cask "marked"
+cask "netspot"
+cask "nova"
+cask "omnifocus"
+cask "omnigraffle"
+cask "omnioutliner"
+cask "omnipresence"
+cask "p4v"
+cask "paw"
+cask "postico"
+cask "sketch"
+cask "slack"
+cask "superduper"
+cask "tower"
+cask "trailer"
+cask "transmit"
+cask "visual-studio-code"
+cask "xcodes"
+cask "xscope"
+mas "Airmail", id: 918858936
+mas "Bandwidth+", id: 490461369
 mas "Bear", id: 1091189122
-mas "Blackmagic Disk Speed Test", id: 425264550
-mas "Caffeine", id: 411246225
+mas "Cocoa JSON Editor", id: 442160773
+mas "CocoaColor", id: 412797403
+mas "DaisyDisk", id: 411643860
 mas "Deliveries", id: 924726344
-mas "differences", id: 1289067356
 mas "Differences", id: 1289067356
+mas "Disk Speed Test", id: 425264550
+mas "Drafts", id: 1435957248
 mas "EyeFriendly", id: 587769990
-mas "Fantastical 2", id: 975937182
+mas "Fantastical", id: 975937182
 mas "GarageBand", id: 682658836
-mas "GIFs", id: 961850017
+mas "HomeControl", id: 1547121417
 mas "Icon Slate", id: 439697913
 mas "iMovie", id: 408981434
-mas "iStat View", id: 1148868081
 mas "Keynote", id: 409183694
-mas "Logic Pro X", id: 634148309
 mas "Mactracker", id: 430255202
 mas "Moom", id: 419330170
 mas "NordVPN IKE", id: 1116599239
 mas "Numbers", id: 409203825
-mas "Objective-Clean", id: 713910413
-mas "OmniGraffle", id: 1142578753
 mas "OmniPlan", id: 1040002810
+mas "OneLogin for Safari", id: 1475824389
 mas "Pages", id: 409201541
+mas "Patterns", id: 429449079
 mas "PCalc", id: 403504866
 mas "Pixelmator", id: 407963104
-mas "Revisions", id: 819348619
 mas "ScreenFloat", id: 414528154
-mas "Screens", id: 446107677
 mas "Server", id: 883878097
-mas "Skitch", id: 425955336
-mas "Soulver", id: 413965349
-mas "Spark", id: 1176895641
-mas "Transloader", id: 572281534
-mas "Tweetbot", id: 557168941
-mas "Twitter", id: 409789998
+mas "Soulver 2", id: 413965349
 mas "Yoink", id: 457622435
 mas "zPerf", id: 483498361
