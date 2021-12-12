@@ -1,9 +1,4 @@
 tap 'homebrew/bundle'
 tap 'homebrew/cask-fonts'
-cask 'doxie'
-cask 'fluid'
-cask 'marked'
-cask 'omnifocus'
-cask 'omnigraffle'
-cask 'omnioutliner'
-cask 'omnipresence'
+cask "font-meslo-for-powerline"
+cask "font-meslo-lg-nerd-font"

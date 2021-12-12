@@ -1,9 +1,7 @@
 tap 'homebrew/bundle'
 tap 'argon/mas'
-mas 'Server', id: 883878097
 mas 'Mactracker', id: 430255202
 #mas 'GarageBand', id: 682658836
-#mas 'TunesBar+', id: 702817673
 mas 'Bear', id: 1091189122
 mas 'Blackmagic Disk Speed Test', id: 425264550
 mas 'Pixelmator', id: 407963104
@@ -13,7 +11,6 @@ mas 'Bandwidth+', id: 490461369
 mas 'ScreenFloat', id: 414528154
 mas 'PCalc', id: 403504866
 mas 'Deliveries', id: 924726344
-mas 'Cocoa JSON Editor', id: 442160773
 mas 'EyeFriendly', id: 587769990
 mas 'Icon Slate', id: 439697913
 mas 'Moom', id: 419330170
