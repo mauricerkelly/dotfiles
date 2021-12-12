@@ -384,6 +384,13 @@ defaults write com.apple.appstore ShowDebugMenu -bool true
 defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "automaticEmojiSubstitutionEnablediMessage" -bool false
 
 ###############################################################################
+# Xcode                                                                       #
+###############################################################################
+
+# Show build times in Xcode
+defaults write com.apple.dt.Xcode ShowBuildOperationDuration YES
+
+###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 
