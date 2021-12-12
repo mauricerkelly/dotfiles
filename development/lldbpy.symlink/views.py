@@ -30,11 +30,11 @@ def print_value(var, depth, prefix):
     else:
         path = ''
 
-    print '^' * local_depth, prefix, ' Adr:', var.GetAddress(), ' Name:', name, ' Type:', typ, value, path
+    print('^' * local_depth, prefix, ' Adr:', var.GetAddress(), ' Name:', name, ' Type:', typ, value, path)
 
     if var.GetNumChildren() > 0:
         if local_depth < 2 or found:
-            print pad, var.GetNumChildren(), 'children, to depth', local_depth + 1
+            print(pad, var.GetNumChildren(), 'children, to depth', local_depth + 1)
             counter = 0
             for subvar in var:
                 subprefix = '%d/%d' % (counter, var.GetNumChildren())
@@ -44,17 +44,17 @@ def print_value(var, depth, prefix):
 
 def prect(debugger, command_line, result, dict):
     """ print rect dimensions """
-    print "Rect dimensions"
+    print("Rect dimensions")
     args = command_line.split()
     if len(args) > 0:
         var = lldb.frame.FindVariable(args[0])
-        print var.GetName()
-        print var.GetValue()
+        print(var.GetName())
+        print(var.GetValue())
 
 
 def printvh(debugger, command_line, result, dict):
     """ print view hierarchy """
-    print 'View hierarchy:'
+    print("View hierarchy:")
     global max_depth
     args = command_line.split()
     if len(args) > 0:
@@ -65,4 +65,4 @@ def printvh(debugger, command_line, result, dict):
             max_depth = depth
         print_value(var, depth, 'ROOT')
     else:
-        print 'pass a variable name and optional depth'
+        print("pass a variable name and optional depth")

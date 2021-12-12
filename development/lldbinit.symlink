@@ -10,14 +10,13 @@ command script add -f views.printvh printvh
 command script add -f views.prect prect
 command regex rd 's/^[[:space:]]*$/po [[[UIApplication sharedApplication] keyWindow] recursiveDescription]/' 's/^(.+)$/po [%1 recursiveDescription]/'
 
-command alias pb p (BOOL)
-command alias pnsi p (NSInteger)
-command alias pnsu p (NSUInteger)
-command alias pcgr p (CGRect)
-command alias pcgf p (CGFloat)
-command alias pcgs p (CGSize)
-command alias pcgp p (CGPoint)
+command alias pb expression -O -l swift -- p (BOOL)
+command alias pnsi expression -O -l swift -- p (NSInteger)
+command alias pnsu expression -O -l swift -- p (NSUInteger)
+command alias pcgr expression -O -l swift -- p (CGRect)
+command alias pcgf expression -O -l swift -- p (CGFloat)
+command alias pcgs expression -O -l swift -- p (CGSize)
+command alias pcgp expression -O -l swift -- p (CGPoint)
 
-command alias reload command source ~/.lldbinit
+command alias reload expression -O -l swift -- command source ~/.lldbinit
 
-command script import /usr/local/opt/chisel/libexec/fblldb.py
