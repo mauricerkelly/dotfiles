@@ -1,13 +1,10 @@
-DEV_DIR=/Users/mkelly/Dropbox/Development/Git
-LOCAL_DEV_DIR=/Users/mkelly/Development
-AN_DEV_DIR=$LOCAL_DEV_DIR/anomali
+DEV_DIR=/Users/mkelly/Developer
+LOCAL_DEV_DIR=/Users/mkelly/Developer
 DROPBOX_DIR=$HOME/Dropbox
 alias cdbwa='cd "$DROPBOX_DIR/Documents/Writing/Build WatchKit Apps"'
 alias cddh='cd $DROPBOX_DIR/Sites/deadheart.org.uk/tdh_umbrella'
 alias cdds='cd $DROPBOX_DIR/Sites'
 alias cdev='cd $DEV_DIR'
 alias cdevlocal='cd $LOCAL_DEV_DIR'
-alias cdevan='cd $AN_DEV_DIR'
-alias cdint='cd $AN_DEV_DIR/optic_link'
 alias cdstg='cd "$DROPBOX_DIR/Documents/Writing/Swift Translation Guide"'
 alias cdtr='cd $DEV_DIR/Trailer'
