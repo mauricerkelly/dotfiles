@@ -43,3 +43,8 @@ Host gitlab.novastone.net
     Hostname gitlab.novastone.net
     IdentityFile ~/.keys/id_novastone_gitlab
     IdentitiesOnly yes
+
+Host gitlab.com
+    PreferredAuthentications publickey
+    IdentityFile ~/.keys/id_gitlab_rsa
+
